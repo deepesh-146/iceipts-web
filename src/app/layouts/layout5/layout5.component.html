@@ -1,0 +1,124 @@
+<!--Navbar Start-->
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark navbar-light" (window:scroll)="windowScroll()" id="navbar">
+    <div class="container">
+        <!-- LOGO -->
+        <a class="navbar-brand logo" href="layout-1">
+            <img src="assets/images/logo-light.png" alt="" class="logo-light" height="21">
+            <img src="assets/images/logo-dark.png" alt="" class="logo-dark" height="21">
+        </a>
+        <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarCollapse" 
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleMenu()">
+            <i class="mdi mdi-menu"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
+                <li class="nav-item" [ngClass]="{'active':currentSection === 'home'}">
+                    <a [ngxScrollTo]="'#home'" href="javascript: void(0);" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item" [ngClass]="{'active':currentSection === 'services'}">
+                    <a [ngxScrollTo]="'#services'" href="javascript: void(0)" class="nav-link" [ngxScrollToOffset]="2">Services</a>
+                </li>
+                <li class="nav-item" [ngClass]="{'active':currentSection === 'about'}">
+                    <a [ngxScrollTo]="'#about'" href="javascript: void(0);" class="nav-link" [ngxScrollToOffset]="2">About</a>
+                </li>
+                <li class="nav-item" [ngClass]="{'active':currentSection === 'features'}">
+                    <a [ngxScrollTo]="'#features'" href="javascript: void(0);" class="nav-link" [ngxScrollToOffset]="2">Features</a>
+                </li>
+                <li class="nav-item" [ngClass]="{'active':currentSection === 'clients'}">
+                    <a [ngxScrollTo]="'#clients'" href="javascript: void(0);" class="nav-link" [ngxScrollToOffset]="2">Clients</a>
+                </li>
+            </ul>
+            <div class="call-no">
+                <a href="#" class="nav-link text-warning"><i class="mdi mdi-phone mr-1"></i> +00 1234 5678 90</a>
+            </div>            
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+<div appScrollspy [spiedTags]="['SECTION']" (sectionChange)="onSectionChange($event)">
+<!-- Hero Start -->
+<section class="hero-5-bg position-relative bg-warning" id="home">
+    <div class="bd-example w-100">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators align-items-center my-0">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item align-items-center active">
+                    <div class="carousel-caption w-75 mx-auto">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6">
+                                    <div class="text-center">
+                                        <h1 class="text-white hero-4-title font-weight-light line-height-1_4 mb-4">A Clean & Minimal Landing Template</h1>
+                                        <p class="text-white">At vero eos et accusamus et iusto odio dignissimos ducimus a qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint cupiditate.</p>
+                                        <button class="btn btn-primary mt-4">Learn More <span class="ml-2 right-icon">&#8594;</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item align-items-center">
+                    <div class="carousel-caption w-75 mx-auto">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6">
+                                    <div class="text-center">
+                                        <h1 class="text-white hero-4-title font-weight-light line-height-1_4 mb-4">Professional, Multipurpose Landing Page</h1>
+                                        <p class="text-white">At vero eos et accusamus et iusto odio dignissimos ducimus a qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint cupiditate.</p>
+                                        <button class="btn btn-primary mt-4">Learn More <span class="ml-2 right-icon">&#8594;</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item align-items-center">
+                    <div class="carousel-caption w-75 mx-auto">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6">
+                                    <div class="text-center">
+                                        <h1 class="text-white hero-4-title font-weight-light line-height-1_4 mb-4">Performancect Solution For Small Businesses</h1>
+                                        <p class="text-white">At vero eos et accusamus et iusto odio dignissimos ducimus a qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint cupiditate.</p>
+                                        <button class="btn btn-primary mt-4">Learn More <span class="ml-2 right-icon">&#8594;</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <div class="slide-icon display-4">
+                    <i class="pe-7s-angle-left"></i>
+                </div>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <div class="slide-icon display-4">
+                    <i class="pe-7s-angle-right"></i>
+                </div>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="hero-bottom-img">
+        <img src="assets/images/hero-5-img.png" alt="" class="img-fluid mx-auto d-block">
+    </div>
+</section>
+<!-- Hero End -->
+
+    <app-services></app-services>
+    <app-about></app-about>
+    <app-features></app-features>
+    <app-clients></app-clients>
+    <app-contact></app-contact>
+    <app-footer></app-footer>
+
+</div>

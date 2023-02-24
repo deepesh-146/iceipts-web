@@ -1,0 +1,70 @@
+<!--Navbar Start-->
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark navbar-light" (window:scroll)="windowScroll()" id="navbar">
+    <div class="container">
+        <!-- LOGO -->
+        <a class="navbar-brand logo" href="layout-4">
+            <img src="assets/images/logo-light.png" alt="" class="logo-light" height="21">
+            <img src="assets/images/logo-dark.png" alt="" class="logo-dark" height="21">
+        </a>
+        <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarCollapse" 
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleMenu()">
+            <i class="mdi mdi-menu"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
+                <li class="nav-item" [ngClass]="{'active':currentSection === 'home'}">
+                    <a [ngxScrollTo]="'#home'" href="javascript: void(0);" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item" [ngClass]="{'active':currentSection === 'services'}">
+                    <a [ngxScrollTo]="'#services'" href="javascript: void(0)" class="nav-link" [ngxScrollToOffset]="2">Services</a>
+                </li>
+                <li class="nav-item" [ngClass]="{'active':currentSection === 'about'}">
+                    <a [ngxScrollTo]="'#about'" href="javascript: void(0);" class="nav-link" [ngxScrollToOffset]="2">About</a>
+                </li>
+                <li class="nav-item" [ngClass]="{'active':currentSection === 'features'}">
+                    <a [ngxScrollTo]="'#features'" href="javascript: void(0);" class="nav-link" [ngxScrollToOffset]="2">Features</a>
+                </li>
+                <li class="nav-item" [ngClass]="{'active':currentSection === 'clients'}">
+                    <a [ngxScrollTo]="'#clients'" href="javascript: void(0);" class="nav-link" [ngxScrollToOffset]="2">Clients</a>
+                </li>
+            </ul>
+            <div class="call-no">
+                <a href="#" class="nav-link text-warning"><i class="mdi mdi-phone mr-1"></i> +00 1234 5678 90</a>
+            </div>            
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+<div appScrollspy [spiedTags]="['SECTION']" (sectionChange)="onSectionChange($event)">
+<!-- Hero Start -->
+<section class="hero-3-bg position-relative overflow-hidden d-flex align-items-center bg-primary" id="home">
+    <div class="hero-3-bg-overlay"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="text-center">
+                    <h1 class="hero-3-title text-white mb-4 font-weight-normal line-height-1_4">Manage All Your Customers Support In One Place</h1>
+                    <p class="text-white-50 mb-4">Et harum quidem rerum a facilis est et expedita distinctio nam libero tempore cum soluta nobis eligendi cumque.</p>
+                    <a href="" class="btn btn-warning">Get Started</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="hero-3-img">
+                    <img src="assets/images/hero-3-img.png" alt="" class="img-fluid mx-auto d-block">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Hero End -->
+    <app-services></app-services>
+    <app-about></app-about>
+    <app-features></app-features>
+    <app-clients></app-clients>
+    <app-contact></app-contact>
+    <app-footer></app-footer>
+</div>
