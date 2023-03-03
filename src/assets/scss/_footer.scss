@@ -12,7 +12,7 @@
                 transition: all 0.5s;
                 color: lighten($muted, 8%);
                 &:hover {
-                    color: $warning !important;
+                    color: $primary !important;
                     margin-left: 6px;
                 }
             }
@@ -31,10 +31,10 @@
             font-size: 18px;
             transition: all 0.3s;
             &:hover {
-                background: $warning;
+                background: $primary;
                 color: $white;
-                border-color: $warning;
-                box-shadow: 0 0 2px 7px rgba($warning, 0.15);
+                border-color: $primary;
+                box-shadow: 0 0 2px 7px rgba($primary, 0.15);
             }
         }
     }
