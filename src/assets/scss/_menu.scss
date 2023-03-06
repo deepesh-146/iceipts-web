@@ -5,7 +5,7 @@
 .nav-item {
     .nav-link {
         display: inline-block;
-        color: $dark;
+        // color: $dark;
         text-decoration: none;
     }
 }
@@ -45,7 +45,8 @@
         li.active a,
         li a:hover,
         li a:active {
-            color: $primary !important;
+            // color: $primary !important;
+            color: #09234b !important;
         }
     }
     .navbar-toggles {
@@ -103,13 +104,15 @@
             li.active a,
             li a:hover,
             li a:active {
-                color: $primary !important;
+                // color: $primary !important;
+                color: #09234b !important;
             }
         }
     }
     .call-no {
         a {
-            color: $warning !important;
+            // color: $warning !important;
+            color: #09234b !important;
         }
     }
     .logo {
@@ -172,7 +175,8 @@
             li.active a,
             li a:hover,
             li a:active {
-                color: $primary !important;
+                // color: $primary !important;
+                color: #09234b !important;
             }
         }
         &>.container {
@@ -198,7 +202,9 @@
         .call-no {
             a {
                 padding-left: 0 !important;
-                color: $warning !important;
+                // color: $primary !important;
+                // color: #09234b !important;
+                color: $white !important;
             }
         }
     }

@@ -3,7 +3,9 @@
     <div class="container">
         <!-- LOGO -->
         <a class="navbar-brand logo" href="layout-2">
-            <img src="assets/images/logo-dark.png" alt="" class="" height="21">
+            <!-- <img src="assets/images/logo-dark.png" alt="" class="" height="21"> -->
+            <img src="assets/images/new-logo-iceipt-blue.png" alt="iCeipts" class="" height="60">
+            <!-- <img src="assets/images/new-logo-iceipt.png" alt="" class="" height="60"> -->
         </a>
         <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarCollapse" 
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleMenu()">
@@ -18,6 +20,7 @@
                     <a [ngxScrollTo]="'#services'" href="javascript: void(0)" class="nav-link" [ngxScrollToOffset]="2">Services</a>
                 </li>
                 <li class="nav-item" [ngClass]="{'active':currentSection === 'about'}">
+                    <!-- <a [ngxScrollTo]="'#about'" [routerLink]="['/about']" class="nav-link" [ngxScrollToOffset]="2">About</a> -->
                     <a [ngxScrollTo]="'#about'" href="javascript: void(0);" class="nav-link" [ngxScrollToOffset]="2">About</a>
                 </li>
                 <li class="nav-item" [ngClass]="{'active':currentSection === 'features'}">
@@ -28,7 +31,7 @@
                 </li>
             </ul>
             <div class="call-no">
-                <a href="#" class="nav-link text-warning"><i class="mdi mdi-phone mr-1"></i> +00 1234 5678 90</a>
+                <a href="#" class="nav-link text-primary"><i class="mdi mdi-phone mr-1"></i> +00 1234 5678 90</a>
             </div>            
         </div>
     </div>
@@ -43,9 +46,9 @@
             <div class="col-lg-6">
                 <div class="hero-title pr-lg-5">
                     <p class="text-uppercase text-primary font-weight-medium f-14 mb-4">Cretive Marketing</p>
-                    <h1 class="hero-1-title mb-4 font-weight-normal line-height-1_4">Get Your Professional Website Done With <span class="text-primary font-weight-medium">Deoxa</span></h1>
+                    <h1 class="hero-1-title mb-4 font-weight-normal line-height-1_4">Get Your Professional Website Done With <span class="text-primary font-weight-medium">iCeipts</span></h1>
                     <p class="text-muted mb-4 pb-2">At vero eos et accusamus iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos at dolores molestias excepturi sint occaecati cupiditate.</p>
-                    <a href="" class="btn btn-warning">Find Out How <span class="ml-2 right-icon">&#8594;</span></a>
+                    <a href="" class="btn btn-primary">Find Out How <span class="ml-2 right-icon">&#8594;</span></a>
                 </div>
             </div>
             <div class="col-lg-6">
