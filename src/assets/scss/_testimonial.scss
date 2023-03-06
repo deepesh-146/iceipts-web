@@ -3,7 +3,7 @@
 */
 
 .testi-border {
-    background: $primary;
+    background: $warning;
     height: 2px;
     width: 20%;
 }
@@ -31,12 +31,12 @@
     &.owl-theme .owl-dots .owl-dot span {
         width: 14px;
         height: 4px;
-        background-color: rgba($primary, 0.4);
+        background-color: rgba($warning, 0.4);
     }
     &.owl-theme .owl-dots .owl-dot.active span,
     &.owl-theme .owl-dots .owl-dot:hover span {
         width: 20px;
         height: 4px;
-        background-color: $primary;
+        background-color: $warning;
     }
 }
