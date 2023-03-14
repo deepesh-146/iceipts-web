@@ -15,7 +15,14 @@ import { ServicesComponent } from './services/services.component';
 
 
 @NgModule({
-  declarations: [AboutComponent, ClientsComponent, ContactComponent, FeaturesComponent, FooterComponent, ServicesComponent, ScrollspyDirective],
+  declarations: [
+    AboutComponent, 
+    ClientsComponent, 
+    ContactComponent, 
+    FeaturesComponent, 
+    FooterComponent, 
+    ServicesComponent, 
+    ScrollspyDirective],
   imports: [
     CommonModule, CarouselModule, CountToModule
   ],

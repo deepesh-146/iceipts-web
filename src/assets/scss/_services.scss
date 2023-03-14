@@ -3,7 +3,7 @@
 */
 
 .service-box {
-    border-radius: 10px;
+    border-radius: 25px;
     padding: 28px 29px;
     margin-bottom: 30px;
     position: relative;
@@ -26,7 +26,7 @@
         position: absolute;
         top: 0px;
         left: 0px;
-        border-radius: 10%;
+        border-radius: 25%;
         z-index: -1;
         transition: all 0.5s;
     }
@@ -37,13 +37,13 @@
         position: absolute;
         top: 0px;
         left: 0px;
-        border-radius: 10%;
+        border-radius: 25%;
         z-index: -1;
         transition: all 0.5s;
     }
     &:hover {
         .service-icon {
-            color: $white;
+            color: $warning;
         }
         .service-title {
             color: $white !important;
