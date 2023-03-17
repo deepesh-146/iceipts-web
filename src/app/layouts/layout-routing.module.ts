@@ -8,40 +8,53 @@ import { Layout3Component } from './layout3/layout3.component';
 import { Layout4Component } from './layout4/layout4.component';
 import { Layout5Component } from './layout5/layout5.component';
 
+
 const routes: Routes = [
     {
-        path: '',
-        redirectTo: '/layout-3', pathMatch: 'full'
-    },
-    {
-        path: 'layout-1',
-        component: Layout1Component
-    },
-    {
-        path: 'layout-2',
-        component: Layout2Component
-    },
-    {
-        path: 'layout-3',
-        component: Layout3Component
-    },
-    {
-        path: 'layout-4',
-        component: Layout4Component
-    },
-    {
-        path: 'layout-5',
-        component: Layout5Component
-    },
-    // {
-    //     path: 'about',
-    //     component: AboutComponent
-    // },
-    {
-        path: '**',
-        component: Layout1Component
+      path: '',
+      component: Layout3Component,
+      children: [
+        // {
+        //   path: "dashboard",
+        //   component: ClientDashboardComponent,
+        // },
+    ]
     }
-];
+]
+// const routes: Routes = [
+//     {
+//         path: '',
+//         redirectTo: '/layout-3', pathMatch: 'full'
+//     },
+//     {
+//         path: 'layout-1',
+//         component: Layout1Component
+//     },
+//     {
+//         path: 'layout-2',
+//         component: Layout2Component
+//     },
+//     {
+//         path: 'layout-3',
+//         component: Layout3Component
+//     },
+//     {
+//         path: 'layout-4',
+//         component: Layout4Component
+//     },
+//     {
+//         path: 'layout-5',
+//         component: Layout5Component
+//     },
+//     // {
+//     //     path: 'about',
+//     //     component: AboutComponent
+//     // },
+//     {
+//         path: '**',
+//         component: Layout1Component
+//     }
+// ];
 
 @NgModule({
     imports: [RouterModule.forChild(routes)],

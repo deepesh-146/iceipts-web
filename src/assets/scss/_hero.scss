@@ -100,6 +100,25 @@
     }
 }
 
+// ***** Hero 7 ***** //
+.hero-7-bg {
+    padding: 210px 0 190px;
+    // .hero-7-img {
+    //     // margin-top: 90px;
+    // }
+    .hero-7-bg-overlay {
+        // background-image: url("../images/hero-7-bg.png");
+        // background-position: center center;
+
+        // @include hero-bg-overlay;
+    }
+    background-size: cover !important;
+    .hero-7-title-content {
+        position: relative;
+        z-index: 1;
+    }
+}
+
 // ***** Responsive ***** //
 @media (max-width: 576px) {
     .hero-1-bg {

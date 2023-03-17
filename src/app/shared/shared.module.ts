@@ -11,6 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FeaturesComponent } from './features/features.component';
 import { FooterComponent } from './footer/footer.component';
 import { ServicesComponent } from './services/services.component';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -22,7 +23,7 @@ import { ServicesComponent } from './services/services.component';
     FeaturesComponent, 
     FooterComponent, 
     ServicesComponent, 
-    ScrollspyDirective],
+    ScrollspyDirective, HomeComponent],
   imports: [
     CommonModule, CarouselModule, CountToModule
   ],
