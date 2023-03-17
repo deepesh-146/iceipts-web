@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent } from '../shared/about/about.component';
+import { FeaturesComponent } from '../shared/features/features.component';
 
 import { Layout1Component } from './layout1/layout1.component';
 import { Layout2Component } from './layout2/layout2.component';
@@ -34,8 +35,8 @@ const routes: Routes = [
         component: Layout5Component
     },
     // {
-    //     path: 'about',
-    //     component: AboutComponent
+    //     path: 'feature',
+    //     component: FeaturesComponent
     // },
     {
         path: '**',

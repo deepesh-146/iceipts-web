@@ -20,8 +20,9 @@ import { Layout5Component } from './layout5/layout5.component';
   declarations: [Layout1Component, Layout2Component, Layout3Component, Layout4Component, Layout5Component],
   imports: [
     CommonModule,
+    SharedModule,/* 2 */
     LayoutsRoutingModule,
-    SharedModule,
+    
     ScrollToModule.forRoot(),
     CarouselModule,
     CountToModule
