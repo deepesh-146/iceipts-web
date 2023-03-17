@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HostListener } from "@angular/core";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-about',
@@ -16,20 +17,22 @@ export class AboutComponent implements OnInit {
  getScreenSize(event?: undefined) {
        this.scrHeight = window.innerHeight;
        this.scrWidth = window.innerWidth;
- }
+ }     
 
- // Constructor
- constructor() {
-    //  let screenWidth = this.getScreenSize();
-      //  aboutHeading() {
-      //   if (this.scrWidth < 768) {
-          
-      //   }
-      //  }
-     
- }
+  constructor(private router:Router) {
+    let screenWidth = this.getScreenSize();
+    // aboutHeading() {
+    //  if (this.scrWidth < 768) {
+       
+    //  }
+    // }
+   }
 
   ngOnInit(): void {
+  }
+
+  ongoFeature(){
+    this.router.navigate(['features']);
   }
 
 }
