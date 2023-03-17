@@ -10,7 +10,6 @@ export class Layout3Component implements OnInit {
 
   currentSection = 'home';
 
-  constructor() { }
 
   ngOnInit(): void {
   }

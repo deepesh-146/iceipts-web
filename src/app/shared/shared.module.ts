@@ -11,6 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FeaturesComponent } from './features/features.component';
 import { FooterComponent } from './footer/footer.component';
 import { ServicesComponent } from './services/services.component';
+import { HomeComponent } from './home/home.component';
 import { WhyIceiptsComponent } from './why-iceipts/why-iceipts.component';
 
 
@@ -23,9 +24,11 @@ import { WhyIceiptsComponent } from './why-iceipts/why-iceipts.component';
     FeaturesComponent, 
     FooterComponent, 
     ServicesComponent, 
+    ScrollspyDirective, 
+    HomeComponent,
     ScrollspyDirective,
-     WhyIceiptsComponent
-    ],
+    WhyIceiptsComponent
+  ],
   imports: [
     CommonModule, CarouselModule, CountToModule
   ],

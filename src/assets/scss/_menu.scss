@@ -152,7 +152,7 @@
 
 /*---Responsive--*/
 
-@media (min-width: 200px) and (max-width: 768px) {
+@media (min-width: 200px) and (max-width: 991px) {
     .navbar-custom {
         margin-top: 0px;
         background-color: $white !important;
@@ -222,3 +222,75 @@
         }
     }
 }
+
+
+// @media (min-width: 768px) and (max-width: 991px) {
+//     .navbar-custom {
+//         margin-top: 0px;
+//         background-color: $white !important;
+//         box-shadow: 0 3px 10px rgba($black, 0.08);
+//         color: $white !important;
+//         .navbar-nav {
+//             margin-top: 0px;
+//             li {
+//                 a {
+//                     transition: all 0.4s;
+//                     color: $muted !important;
+//                     margin: 0px;
+//                 }
+//                 &.active {
+//                     a {
+//                         border-color: transparent;
+//                     }
+//                 }
+//             }
+//             li.active a,
+//             li a:hover,
+//             li a:active {
+//                 // color: $primary !important;
+//                 color: #09234b !important;
+//             }
+//         }
+//         &>.container {
+//             width: 90%;
+//         }
+//         .logo {
+//             .logo-dark {
+//                 display: inline-block !important;
+//             }
+//             .logo-light {
+//                 display: none !important;
+//             }
+//         }
+//         &.navbar-light {
+//             .navbar-nav {
+//                 li.active a,
+//                 li a:hover,
+//                 li a:active {
+//                     color: $dark !important;
+//                 }
+//             }
+//         }
+//         .call-no {
+//             a {
+//                 padding-left: 0 !important;
+//                 // color: $primary !important;
+//                 // color: #09234b !important;
+//                 color: $white !important;
+//             }
+//         }
+//     }
+//     .navbar-toggler {
+//         font-size: 24px;
+//         margin-top: 0px;
+//         margin-bottom: 0px;
+//         color: $dark;
+//     }
+//     .navbar-light {
+//         .nav-item {
+//             .nav-link:after {
+//                 background: $dark;
+//             }
+//         }
+//     }
+// }
