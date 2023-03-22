@@ -23,7 +23,7 @@ $muted:                     #9da9bb;
 $light:                     #f7f9fe;
 $body-bg:                   #ffffff;
 $blue:                      #110152;
-
+$backf:                     #E8F1FB;
 
 $theme-colors: (
     "primary": $primary,
@@ -38,7 +38,8 @@ $theme-colors: (
     "body-bg": $body-bg,
     "black": $black,
     "white": $white,
-    "blue": $blue
+    "blue": $blue,
+    "backf":$backf,
 );
 
 // Font

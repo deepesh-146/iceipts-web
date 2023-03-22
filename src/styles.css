@@ -1,2 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+  }
 
+  body {
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+  

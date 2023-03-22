@@ -5,7 +5,7 @@
 .nav-item {
     .nav-link {
         display: inline-block;
-        // color: $dark;
+         color: $white;
         text-decoration: none;
     }
 }
@@ -30,10 +30,11 @@
         li {
             a {
                 line-height: 26px;
-                color: darken($muted, 5%);
+                // color: darken($muted, 5%);
+                color: $white;
                 font-size: 15px;
                 transition: all 0.3s;
-                background-color: transparent !important;
+                // background-color: transparent !important;
                 padding: 6px 0;
                 margin: 0 20px;
             }
@@ -45,8 +46,8 @@
         li.active a,
         li a:hover,
         li a:active {
-            // color: $primary !important;
-            color: #09234b !important;
+             color: $warning !important;
+            // color: #09234b !important;
         }
     }
     .navbar-toggles {
@@ -63,6 +64,7 @@
     font-size: 24px;
     margin-top: 5px;
     margin-bottom: 0px;
+    background-color: white;
     color: $white;
 }
 
@@ -98,14 +100,16 @@
             margin-top: 0px;
             li {
                 a {
-                    color: darken($muted, 6%) !important;
+                    // color: darken($muted, 6%) !important;
+                    // muted color changed.
+                    color: $white !important;
                 }
             }
             li.active a,
             li a:hover,
             li a:active {
-                // color: $primary !important;
-                color: #09234b !important;
+                //  color: $white !important;
+                color: $warning !important;
             }
         }
     }
@@ -144,7 +148,8 @@
         li.active a,
         li a:hover,
         li a:active {
-            color: $white !important;
+            // color: $white !important;
+            color: $warning !important;
         }
     }
 }
@@ -163,7 +168,8 @@
             li {
                 a {
                     transition: all 0.4s;
-                    color: $muted !important;
+                    // color: $muted !important;
+                    color: $warning !important;
                     margin: 0px;
                 }
                 &.active {
@@ -175,8 +181,8 @@
             li.active a,
             li a:hover,
             li a:active {
-                // color: $primary !important;
-                color: #09234b !important;
+                color: $warning !important;
+                // color: #09234b !important;
             }
         }
         &>.container {
@@ -195,7 +201,8 @@
                 li.active a,
                 li a:hover,
                 li a:active {
-                    color: $dark !important;
+                    // color: $dark !important;
+                    color: $warning !important;
                 }
             }
         }
@@ -212,12 +219,13 @@
         font-size: 24px;
         margin-top: 0px;
         margin-bottom: 0px;
-        color: $dark;
+        color: $white;
     }
     .navbar-light {
         .nav-item {
             .nav-link:after {
-                background: $dark;
+                // background: $dark;
+                background: $warning;
             }
         }
     }
