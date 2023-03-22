@@ -1,0 +1,121 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Artifika&family=Roboto&display=swap'); */
+/* 
+img{
+    background-size: cover;
+}
+.tagline{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    padding: 10px 0px;
+    transform: translate(-50%, -50%);
+    
+  }
+
+  .ceo{
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    font-family: 'Artifika', serif;
+    transform: translate(-50%, -50%);
+  }
+
+  h4{
+    font-family: Lexend Deca;
+  }
+
+  .footerbottom{
+    
+    margin: 0px 30px;
+      border-top-right-radius: 60%;
+      border-bottom-left-radius: 60%;
+      border-bottom-right-radius: 20%;
+      border-top-left-radius: 20%;
+     
+  }
+
+  @media (min-width: 200px) and (max-width: 768px) {
+
+    .thought {
+        position: absolute;
+        font-size: 4.2em;
+        
+    }
+
+    .ceo {
+        position: absolute;
+       
+    }
+
+    .ceoName {
+        margin: 0% 0% 3% 22%;
+    }
+}
+  */
+
+  @import url('https://fonts.googleapis.com/css2?family=Artifika&family=Roboto&display=swap');
+
+  .footertext {
+    border-top-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 10%;
+    border-top-left-radius: 10%;
+    margin: 0px 20px;
+  }
+  
+    .tagline {
+      font-family: 'Artifika', serif;
+      font-size: 1.5rem;
+    }
+  
+    
+    .ceo {
+      font-family: 'Artifika', serif;
+      font-size: 1rem;
+    }
+  
+    @media (min-width: 200px) and (max-width: 768px) {
+      
+    .tagline {
+      font-family: 'Artifika', serif;
+      font-size: 1.2rem;
+    }
+  
+    
+    .ceo {
+      font-family: 'Artifika', serif;
+      font-size: 0.7rem;
+      margin-left: 70%;
+    }
+  
+    .footertext {
+      border-top-right-radius: 40%;
+      border-bottom-left-radius: 40%;
+      border-bottom-right-radius: 10%;
+      border-top-left-radius: 10%;  
+      margin: 0px 20px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+      
+    .tagline {
+      font-family: 'Artifika', serif;
+      font-size: 1.25rem;
+    }
+  
+    
+    .ceo {
+      font-family: 'Artifika', serif;
+      font-size: 0.7rem;
+      margin-left: 70%;
+    }
+  
+    .footertext {
+      border-top-right-radius: 40%;
+      border-bottom-left-radius: 40%;
+      border-bottom-right-radius: 10%;
+      border-top-left-radius: 10%;  
+      margin: 0px 20px;
+    }
+  }

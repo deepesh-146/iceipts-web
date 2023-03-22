@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,8 +9,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'iCeipts Technology';
 
+  constructor(private router:Router){
+
+  }
+  public isCollapsed = true;
   // Loader
   isLoading: boolean;
+  scroller: any;
 
   ngOnInit() {
     this.isLoading = true;
@@ -18,4 +24,19 @@ export class AppComponent {
       this.isLoading = false;
     }, 600);
   }
+
+  toggleMenu() {
+    document.getElementById('navbarCollapse').classList.toggle('show');
+  }
+
+  // goDown2() {
+  //   //this.scroller.scrollToAnchor("targetGreen");
+  //   // this.router.navigate(['/home','home']);
+  //   this.router.navigate(['/home',{key:"SomeValue"}])
+  //   document.getElementById("about").scrollIntoView({
+  //     behavior: "smooth",
+  //     block: "start",
+  //     inline: "nearest"
+  //   });
+  // }
 }

@@ -1,0 +1,153 @@
+p {
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* About Us Page */
+
+
+.top {
+    display: block;
+}
+
+.aboutImg {
+    width:100% !important;
+    display: block;
+}
+
+.aboutus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* .content {
+        top:40%;
+        left:33%;
+        right:15%;
+        transform: translate(-50%, -50%);
+        font-size: 14px;
+    } */
+}
+
+
+@media (min-width: 200px) and (max-width: 768px) {
+/* 
+    .content {
+        top:40%;
+        left:32%;
+        right:10%;
+        transform: translate(-50%, -50%);
+        font-size: 14px;
+    } */
+}
+
+/* vision Page */
+
+
+.vision {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.founderPic {
+    width: 100% !important;
+    display: block;
+}
+
+
+/* Why Iceipts */
+
+.whyHeading {
+    width: 50%;
+    margin:auto;
+}
+
+
+.icons {
+    width: 20%;
+    display: inline;
+    margin:0px;
+    padding:0px;
+  }
+
+  @media (min-width: 200px) and (max-width: 768px) {
+    .whyHeading {
+        width: 100%;
+        margin:auto;
+    }
+
+    .icons {
+        width: 15%;
+        display: inline;
+        margin:0px;
+        padding:0px;
+      }
+    
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .whyHeading {
+        width: 100%;
+        margin:auto;
+    }
+
+    .icons {
+        width: 5%;
+        display: inline;
+        margin:0px;
+        padding:0px;
+      }
+
+  }
+ /* old about page  */
+ 
+
+
+/* .container1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color:#f6f9fc;
+}
+
+.container1 > img {
+    width:100%;
+    display: block;
+} */
+
+/* .content {
+    position:absolute;
+    top:40%;
+    left:30%;
+    right:20%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+} */
+
+/* Old vision page */
+
+/* .container2 {
+    height: auto;
+    position: relative;
+    width: 100%;
+    background-color:#27076a;
+    margin-top: 10px;
+} */
+
+/* .container2 > founderPic {
+    width:100%;
+    display: block;
+} */
+/* 
+.content2 {
+    position:absolute;
+    top:80%;
+    left:30%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+} */
