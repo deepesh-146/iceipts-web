@@ -1,64 +1,47 @@
-<nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark navbar-light nav-sticky  bg-blue" id="navbar">
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark navbar-light nav-sticky bg-blue" id="navbar">
   <div class="container">
       <!-- LOGO -->
       <a class="navbar-brand logo">
-          <!-- <img src="assets/images/logo-light.png" alt="" class="logo-light" height="21">
-          <img src="assets/images/logo-dark.png" alt="" class="logo-dark" height="21"> -->
-          
-          <img src="assets/images/new-logo-iceipt.png" alt=""  height="60"> 
-          <!-- <img src="assets/images/new-logo-iceipt-blue.png" alt="" class="logo-dark" height="60">        -->
+        <img src="assets/images/new-logo-iceipt.png" alt=""  height="60"> 
       </a>
       <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarCollapse03" 
           aria-controls="navbarCollapse03" aria-expanded="false" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed">
-          <!-- <i class="mdi mdi-menu"></i> -->
           <span class="navbar-toggler-icon"></span>
       </button>
     
       <div class="collapse navbar-collapse" id="navbarCollapse03" [ngbCollapse]="isCollapsed">
           <ul class="navbar-nav ml-auto navbar-center" id="mySidenav">
               <li class="nav-item" >
-                  <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+                  <a class="nav-link" routerLink="/home" routerLinkActive="active" fragment="home">Home</a>
               </li>
               <li class="nav-item" >
-                  <a  class="nav-link" routerLink="/public/service" routerLinkActive="active">Services</a>
+                  <a  class="nav-link" [routerLink]="['/home']"  routerLinkActive="active" fragment="services">Services</a>
               </li>
               <li class="nav-item" >
-                  <a  class="nav-link" routerLink="/public/about" routerLinkActive="active">About</a>
-                  <!-- <a  class="nav-link" [routerLink]="['/home', '2']" >About</a> -->
+                  <a  class="nav-link" [routerLink]="['/home']"  routerLinkActive="active" fragment="about21">About</a>
               </li>
               <li class="nav-item" >
-                  <a  class="nav-link" routerLink="/public/feature" routerLinkActive="active">Features</a>
+                  <a  class="nav-link" [routerLink]="['/home']"  routerLinkActive="active" fragment="features">Features</a>
               </li>
               <li class="nav-item" >
-                <a  class="nav-link" routerLink="/public/client" routerLinkActive="active">Clients</a>
-                  <!-- <a  class="nav-link" [routerLink]="['/home', '1']" [queryParams]="{ page:'clients' }"  routerLinkActive="active">Clients</a> -->
-              </li>
+                <a  class="nav-link" [routerLink]="['/home']"  routerLinkActive="active" fragment="clients">Clients</a>
+             </li>
               <li class="nav-item" >
-                <a  class="nav-link" routerLink="/public/contact" routerLinkActive="active">Contact</a>
+                <a  class="nav-link" [routerLink]="['/home']"  routerLinkActive="active" fragment="contact">Contact</a>
                </li>
-              <li class="nav-item mobileapp">
+              <li class="nav-item">
                 <button class = "btn btn-warning appbutton"
                   >Mobile App</button>
             </li>
             <li class="nav-item login">
-                <button class = "btn btn-warning text-white loginbutton"
+                <button class = "btn btn-warning text-white loginbutton" 
+                onclick=" window.open('https://client.iceipts.com/#/auth/login','_blank')" taget="_blank"
                 >Login</button>
             </li>
           </ul>
-          <!-- <div class="mobileapp">
-              <button class = "btn btn-warning appbutton"
-                  >Mobile App</button>
-              <!-- <a href="#" class="nav-link btn btn-warning text-white">Login</a> -->
-          <!-- </div>             --> -->
-          <!-- <div class="login">
-              <button class = "btn btn-warning text-white loginbutton"
-                  >Login</button>
-              <!-- <a href="#" class="nav-link btn btn-warning text-white">Login</a> -->
-          <!-- </div>             --> -->
+         
       </div>
   </div>
 </nav>
-<!-- Navbar End -->
 
-<!-- End Preloader-->
 <router-outlet></router-outlet>

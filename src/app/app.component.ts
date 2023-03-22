@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,13 +10,11 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'iCeipts Technology';
 
-  constructor(private router:Router){
-
-  }
+  constructor(private router: Router){}
   public isCollapsed = true;
   // Loader
   isLoading: boolean;
-  scroller: any;
+  scroller:any;
 
   ngOnInit() {
     this.isLoading = true;
@@ -29,14 +28,29 @@ export class AppComponent {
     document.getElementById('navbarCollapse').classList.toggle('show');
   }
 
-  // goDown2() {
-  //   //this.scroller.scrollToAnchor("targetGreen");
-  //   // this.router.navigate(['/home','home']);
-  //   this.router.navigate(['/home',{key:"SomeValue"}])
-  //   document.getElementById("about").scrollIntoView({
-  //     behavior: "smooth",
-  //     block: "start",
-  //     inline: "nearest"
-  //   });
-  // }
+  goDown2() {
+    //   //this.scroller.scrollToAnchor("targetGreen");
+    //   // this.router.navigate(['/home','home']);
+    //   this.router.navigate(['/home',{key:"SomeValue"}])
+    document.getElementById('about21').scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest',
+    });
+  }
+
+  scrollPoint2() {
+    // document.getElementById("point_2").scrollIntoView({behavior: "smooth"});
+    document.getElementById('scroll11').scrollIntoView();
+  }
+
+  scrollPoint1(el: HTMLElement) {
+    // el.scrollIntoView({behavior: "smooth"});
+    el.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest',
+    });
+  }
+
 }

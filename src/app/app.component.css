@@ -2,27 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Artifika&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Artifika&family=Roboto&display=swap');
 
-/* mobile app link */
-.mobileapp {
-    margin: 0px 20px 0px 10px;
-}
-
 .appbutton {
-    padding: 6px 11px;
-    
-    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 
-                0 6px 20px 0 rgba(0,0,0,0.19); */
+    padding: 6px 11px !important;
+    margin:0px 20px 0px 10px;
 }
 
 /* Login button */
 .loginbutton {
     padding: 6px 32px;
 }
-
-/* Desktop download button */
-/* .desktopappbutton {
-    padding: 6px 11px;
-} */
 
 /* Heading and Tagline */
 
@@ -49,18 +37,14 @@ font-family: 'Artifika', serif;
 font-family: 'Roboto', sans-serif; */
 
 @media screen and (min-width: 200px) and (max-width: 991px) {
-    
-    /* mobile app link */
-    .mobileapp {
-        margin: 0px 10px 0px 10px;
-    }
-/* 
+
     .appbutton {
-        padding: 6px 11px;
-    } */
+        padding: 6px 11px !important;
+        margin: 0px 5px 5px 0px;
+    }
 
     /* Login button */
     .loginbutton {
-        padding: 0px 0px;
+        margin-top: 10px;
     }
 }
