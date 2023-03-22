@@ -8,39 +8,38 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
   id: string;
+  fragment:any;
+
 
 
 
   constructor(private route:ActivatedRoute) { }
 
   ngOnInit(): void {
-  //  this.id= this.route.snapshot.paramMap.get('home');
-  //  console.log(this.id);
-  //  let myPassedData: any = routeParams.params;
-  //  console.log(myPassedData.someProperty); #Prints "SomeValue"
-  //  this.id = this.route.snapshot.paramMap.get("id");
-  //  console.log("sd",this.id)
-  //  this.route.paramMap.subscribe(params => {
-  //   this.id = params.get('id');
-  //   console.log("params",this.id)
-  // });
-  // this.id = this.route.snapshot.queryParamMap.get("page");
-  // console.log("params",this.id)
-  // this.route.queryParamMap.subscribe(params => {
-  //   let a = params.get('page');
-  //   if(a== "clients"){
- 
-  //     document.getElementById("clients23").scrollIntoView({
-  //       behavior: "smooth",
-  //       block: "start",
-  //       inline: "nearest"
-  //     });
-  //   }
-   
-  // });
+  
+    this.route.fragment.subscribe((fragment: string) => {
+      this.fragment = fragment;
+      console.log('fragment', this.fragment);
+      if (this.fragment) {
+        setTimeout(() => {
+          this.scroll(this.fragment);
+        }, 250);
+      }
+    });
+  }
 
- 
+  
 
+
+
+scroll(id) {
+    console.log('scroll to--', id);
+    const elmnt = document.getElementById(id);
+    elmnt.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest',
+    });
   }
 
 

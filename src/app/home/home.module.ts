@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PublicModule } from '../public/public.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -8,7 +9,8 @@ import { PublicModule } from '../public/public.module';
   declarations: [],
   imports: [
     CommonModule,
-    PublicModule
+    PublicModule,
+    NgbModule
   ]
 })
 export class HomeModule { }
