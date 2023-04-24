@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Artifika&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Roboto&display=swap');
+
+
+.heading{
+    font-family: 'Artifika', serif;
+}
+
+.sub-heading{
+    font-family: 'Aref Ruqaa', serif;
+}
