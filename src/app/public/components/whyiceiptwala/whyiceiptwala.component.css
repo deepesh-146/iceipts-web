@@ -39,8 +39,8 @@ img{
 
 
 .symbol{
-    width: 30%;
-    height: 5px;
+    width: 50%;
+    height: 1px !important;
     margin: auto;
 }
 
