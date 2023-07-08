@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './home/home.component';
 import { PublicModule } from "./public/public.module";
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 // import { PublicModule } from './public/public.module';
 
 
@@ -19,7 +20,7 @@ import { PublicModule } from "./public/public.module";
         AppComponent,
         HomeComponent,
     ],
-    providers: [],
+    providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
     bootstrap: [AppComponent],
     imports: [
         BrowserModule,
