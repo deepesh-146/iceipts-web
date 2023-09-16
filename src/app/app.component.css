@@ -1,10 +1,9 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Artifika&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Artifika&family=Roboto&display=swap');
 
 .appbutton {
     padding: 6px 11px !important;
-    margin:0px 20px 0px 10px;
+    margin: 0px 20px 0px 10px;
 }
 
 /* Login button */
@@ -22,12 +21,12 @@
     font-family: 'Aref Ruqaa', serif;
 }
 
-.navbar-nav > li > a {
-    color:rgba(white, 0.9) !important;
-} 
+.navbar-nav>li>a {
+    color: rgba(white, 0.9) !important;
+}
 
-.navbar-nav > li > a:hover {
-    color:#ff8057 !important;
+.navbar-nav>li>a:hover {
+    color: #ff8057 !important;
 }
 
 /* 
@@ -47,4 +46,15 @@ font-family: 'Roboto', sans-serif; */
     .loginbutton {
         margin-top: 10px;
     }
+}
+
+
+.logo2>img {
+    font-size: 10px;
+    /* max-inline-size: 20px; 
+    /* height: 20px;
+    width: 20px;
+    background-size: 20px 20px;*/
+    width: 20px;
+    height: 10px;
 }
