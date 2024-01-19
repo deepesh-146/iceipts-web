@@ -1,11 +1,179 @@
-@import url('https://fonts.googleapis.com/css2?family=Artifika&family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .heading{
-    font-family: 'Artifika', serif;
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
+  font-size: 42px;
+  color:rgba(26, 32, 44, 1);
 }
 
-.sub-heading{
-    font-family: 'Aref Ruqaa', serif;
+.subHeading {
+  color: rgba(25, 24, 37, 0.5);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
 }
+
+.hero-3-bg {
+  padding: 70px 0 0 !important;
+}
+
+.appbutton {
+  padding: 6px 11px !important;
+  color:white;
+  background-color: rgba(87, 0, 123, 1);
+  background-image: linear-gradient(19deg, rgba(102, 117, 247, 1) 0%, rgba(102, 117, 247, 1) 100%);
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.pagination button {
+  background-color: #ddd;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.sliderImages {
+  width: 415px;
+  height:275px;
+}
+
+.left-section , .right-section {
+  min-height: 510px;
+}
+
+.right-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-container {
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  width: 450px !important;
+  height: 325px !important;
+  margin-bottom: 50px;
+}
+
+.progress-container {
+  position: absolute;
+  bottom: -55px;
+  left: 51px;
+  width: 350px;
+  height: 10px;
+  background-color: #ddd;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 475px;
+  background-color: #4CAF50;
+}
+
+.progressColor {
+  background-color: rgba(87, 0, 123, 1);
+}
+
+.tie {
+  position: absolute;
+  left: 14.5%;
+  top: 34%;
+}
+
+.firstNumber {
+  color:rgba(87, 0, 123, 1);
+  font-size: 20px;
+  position: absolute;
+  left: -10%;
+  bottom: -90%;
+}
+
+.lastNumber {
+  color:rgba(87, 0, 123, 1);
+  font-size: 20px;
+  position: absolute;
+  right: -10%;
+  bottom: -90%;
+}
+
+@media (min-width: 768px)  and (max-width: 992px ) {
+
+  .left-section {
+    min-height: 400px;
+  }
+  .right-section {
+    min-height: 525px;
+  }
+}
+
+@media (min-width: 500px)  and (max-width: 768px ) {
+
+  .left-section {
+    min-height: 450px;
+  }
+  .right-section {
+    min-height: 540px;
+  }
+}
+
+@media (min-width: 500px)  and (max-width: 600px ) {
+
+  .sliderImages {
+    width: 360px;
+    height:225px;
+  }
+
+  .carousel-container {
+    width: 400px !important;
+    height:250px !important;
+  }
+
+  .progress-container {
+    width: 295px;
+  }
+
+  .firstNumber {
+    left: -12%;
+  }
+
+  .lastNumber {
+    right: -12%;
+  }
+}
+
+@media screen  and (max-width: 500px ) {
+
+  .sliderImages {
+    width: 325px;
+    height:175px;
+  }
+
+  .carousel-container {
+    width: 350px !important;
+    height:200px !important;
+  }
+
+  .right-section {
+    min-height: 340px;
+  }
+
+  .progress-container {
+    width: 250px;
+  }
+
+}
+

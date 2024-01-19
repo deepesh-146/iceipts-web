@@ -12,9 +12,11 @@ export class AppComponent {
 
   constructor(private router: Router){}
   public isCollapsed = true;
-  // Loader
   isLoading: boolean;
   scroller:any;
+  isFilterVisible = false;
+
+  isHovered: boolean = false;
 
   ngOnInit() {
     this.isLoading = true;
@@ -28,10 +30,11 @@ export class AppComponent {
     document.getElementById('navbarCollapse').classList.toggle('show');
   }
 
+  toggleFilter(isHovered: boolean): void {
+    this.isFilterVisible = isHovered;
+  }
+
   goDown2() {
-    //   //this.scroller.scrollToAnchor("targetGreen");
-    //   // this.router.navigate(['/home','home']);
-    //   this.router.navigate(['/home',{key:"SomeValue"}])
     document.getElementById('about21').scrollIntoView({
       behavior: 'smooth',
       block: 'start',
@@ -40,12 +43,10 @@ export class AppComponent {
   }
 
   scrollPoint2() {
-    // document.getElementById("point_2").scrollIntoView({behavior: "smooth"});
     document.getElementById('scroll11').scrollIntoView();
   }
 
   scrollPoint1(el: HTMLElement) {
-    // el.scrollIntoView({behavior: "smooth"});
     el.scrollIntoView({
       behavior: 'smooth',
       block: 'start',

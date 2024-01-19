@@ -1,48 +1,99 @@
-<nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark navbar-light nav-sticky bg-blue"
-  id="navbar">
-  <div class="container">
-    <!-- LOGO -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark navbar-light nav-sticky bg-white" id="navbar" style="box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);">
+  <div class="container-fluid">
     <a class="navbar-brand logo">
-      <img style="height: 1.5rem" src="assets/images/logos/logo-symbol-white.png">
-      <img style="height: 1.4rem;margin-left: 10px;" class="logo2" src=" assets/images/logos/logo-white.png">
+      <img style="height: 1.4rem;margin-left: 10px;cursor: pointer;" routerLink="/home" fragment="home" class="logo2" src=" assets/images/logos/logo-grad.png">
     </a>
     <button class=" navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarCollapse03"
       aria-controls="navbarCollapse03" aria-expanded="false" aria-label="Toggle navigation"
-      (click)="isCollapsed = !isCollapsed">
+      (click)="isCollapsed = !isCollapsed" style="margin-right: 10px;">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarCollapse03" [ngbCollapse]="isCollapsed">
-      <ul class="navbar-nav ml-auto navbar-center " style="align-items: center;" id="mySidenav">
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/home" routerLinkActive="active" fragment="home">Home</a>
-        </li>
+      <ul class="navbar-nav navbar-center links" id="mySidenav">
+
         <li class="nav-item">
           <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active" fragment="services">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active" fragment="about21">About</a>
+          <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active" >About Us</a>
+        </li>
+        <li class="nav-item" (mouseenter)="toggleFilter(true)" (mouseleave)="toggleFilter(false)">
+          <div class="dropdown">
+            <a class="nav-link" style = "cursor: pointer;" >
+              <span class = "product" style = "color: rgba(74, 85, 104, 1);">Product</span>
+            </a>
+            <div class="filterBox" [ngClass]="{'show': isFilterVisible}">
+              <div class="container" style = "display: flex;padding: 20px;width: 530px;">
+                <div class="row">
+                  <div style = "display: flex;align-items: center;width: 170px;cursor: pointer;">
+                    <div style = "padding: 10px;">
+                      <img src = "../assets/images/B2B.png" alt = "Inventory Management" width = "40" height = "40" />
+                    </div>
+                    <div class = "productLinks">Inventory <br />Management </div>
+                  </div>
+                  <div style = "display: flex;align-items: center;width: 170px;cursor: pointer;">
+                    <div style = "padding: 10px;">
+                      <img src = "../assets/images/B2B.png" alt = "Mining" width = "40" height = "40" />
+                    </div>
+                    <div class = "productLinks">Accounting</div>
+                  </div>
+                  <div style = "display: flex;align-items: center;width: 170px;cursor: pointer;">
+                    <div style = "padding: 10px;">
+                      <img src = "../assets/images/B2B.png" alt = "Mining" width = "40" height = "40" />
+                    </div>
+                    <div class = "productLinks">Crusher <br /> Unit</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div style = "display: flex;align-items: center;width: 170px;cursor: pointer;">
+                    <div style = "padding: 10px;">
+                      <img src = "../assets/images/B2B.png" alt = "Mining" width = "40" height = "40" />
+                    </div>
+                    <div class = "productLinks">HRMS</div>
+                  </div>
+                  <div style = "display: flex;align-items: center;width: 170px;cursor: pointer;">
+                    <div style = "padding: 10px;">
+                      <img src = "../assets/images/B2B.png" alt = "Mining" width = "40" height = "40" />
+                    </div>
+                    <div class = "productLinks">Warehouse <br /> Management</div>
+                  </div>
+                  <div style = "display: flex;align-items: center;width: 170px;cursor: pointer;">
+                    <div style = "padding: 10px;">
+                      <img src = "../assets/images/B2B.png" alt = "Mining" width = "40" height = "40" />
+                    </div>
+                    <div class = "productLinks">Campaign <br /> Management</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div style = "display: flex;align-items: center;width: 170px;cursor: pointer;">
+                    <div style = "padding: 10px;">
+                      <img src = "../assets/images/B2B.png" alt = "Mining" width = "40" height = "40" />
+                    </div>
+                    <div class = "productLinks">Employee <br /> Management</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active" fragment="features">Features</a>
+          <a class="nav-link" [routerLink]="['/moreinfo/industry']" routerLinkActive="active">Industry</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active" fragment="clients">Clients</a>
+          <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active" fragment="clients">Pricing</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active" fragment="contact">Contact</a>
         </li>
         <li class="nav-item">
-          <button class="btn btn-warning appbutton">Mobile App</button>
-        </li>
-        <li class="nav-item login">
-          <button class="btn btn-warning text-white loginbutton"
-            onclick=" window.open('https://web.iceipts.com/#/auth/login','_blank')" target="_blank">Login</button>
+          <button class="btn appbutton" style = "color: white;">Mobile App</button>
         </li>
       </ul>
 
     </div>
   </div>
 </nav>
+
 
 <router-outlet></router-outlet>
