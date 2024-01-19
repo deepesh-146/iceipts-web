@@ -9,6 +9,7 @@ import { ScanpayComponent } from './components/scanpay/scanpay.component';
 import { EmpmanagementComponent } from './components/empmanagement/empmanagement.component';
 import { SelfcheckoutComponent } from './components/selfcheckout/selfcheckout.component';
 import { IndustryComponent } from './components/industry/industry.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 
 
@@ -16,7 +17,7 @@ import { IndustryComponent } from './components/industry/industry.component';
 
 
 @NgModule({
-  declarations: [WGmanagementComponent, MoreinfoComponent, ErpComponent, GstComponent, ScanpayComponent, EmpmanagementComponent, SelfcheckoutComponent, IndustryComponent],
+  declarations: [WGmanagementComponent, MoreinfoComponent, ErpComponent, GstComponent, ScanpayComponent, EmpmanagementComponent, SelfcheckoutComponent, IndustryComponent, AboutUsComponent],
   imports: [
     CommonModule,
     MoreinfoRoutingModule
