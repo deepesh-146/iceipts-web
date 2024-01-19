@@ -1,52 +1,53 @@
 <div appScrollspy>
-    <!-- Hero Start -->
-    <section class="hero-3-bg position-relative overflow-hidden d-flex align-items-center bg-blue" id="home">
-        <div class="hero-3-bg-overlay"></div>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="text-center">
-                        <!-- <h1 class="hero-3-title text-white mb-4 font-weight-normal line-height-1_4">
-                            <div class = "heading"
-                            >iCeipts Technology</div><br>
-                            <div class = "sub-heading"
-                            >Effortlessly Efficient</div></h1> -->
-                        <div class="hero-3-title text-white mb-4 font-weight-normal line-height-1_4">
-                            <h1 class = "heading">iCeipts Technology</h1>
-                            <h2 class = "sub-heading">Effortlessly efficient</h2>
-                        </div>    
-                        <p class="text-white-50 mb-4">" A digital platform that makes your life easy and the efficient way to manage all your business under one roof. A company that values your time and privacy ."</p>
-                        <!-- <div class = "desktopapp">
-                            <button class="btn btn-warning desktopappbutton" routerLink="/public/feature">Desktop App</button>
-                        </div> -->
-                        <!-- <a href="" class="btn btn-danger download">Download</a> -->
-                    </div>
-                </div>
-            </div>
-    
-            <div class="row justify-content-center">
-                <div class="col-md-10">
-                    <div class="hero-3-img">
-                        <img 
-                            src="assets/images/FrameHome.png" 
-                            alt="" 
-                            class="img-fluid mx-auto d-block">
-                        <!-- <img src="assets/images/home-video.mp4" alt="" class="img-fluid mx-auto d-block"> -->
-                        <!-- <video width="320" height="240" controls>
-                            <source src="assets/images/home-video.mp4" type="video/mp4">
-                            <source src="movie.ogg" type="video/ogg">
-                            Your browser does not support the video tag.
-                        </video> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-  
+  <section style = "padding: 70px 0 0 !important;" id="home">
+    <div class="container-fluid">
+
+      <img
+          src = "../../assets/images/oneRoof.png"
+          alt = "Blue tie around the 'one roof' word in heading."
+          width = "230" height = "100"
+          class="tie"
+        >
+      <div class="row">
+
+        <div class="col-sm-12 col-md-12 col-lg-6 left-section">
+          <div class = "heading" style = "margin: 70px 0px 0px 50px;">
+            Manage all your business under one roof.
+          </div><br />
+          <div class = "subHeading" style = "margin: 30px 90px 0px 50px;">
+            We always make our customer happy by providing as may choices as possible.<br />
+          </div>
+          <div class = "mobileApp" style = "margin: 100px 0px 10px 50px;">
+            <button class="btn text-white appbutton"
+              onclick=" window.open('https://web.iceipts.com/#/auth/login','_blank')" target="_blank">
+                Let's get started !
+            </button>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 right-section">
+          <div class="carousel-container">
+            <ngb-carousel [interval]="0" (slide)="onSlide($event.current)" class="custom-carousel" style = "display: flex;justify-content: center;align-items: center;">
+              <ng-template ngbSlide *ngFor="let image of images; let i = index">
+                <img [src]="image" alt="Slide {{ i + 1 }}" class="sliderImages">
+              </ng-template>
+            </ngb-carousel>
+            <div class="progress-container">
+              <div class="progress-bar" [style.width]="progressPercentage + '%'" [ngClass]="{'progressColor': progressPercentage}"></div>
+              <span class = "firstNumber">{{ (+this.temp + 1) | number:'2.0' }}</span>
+              <span class = "lastNumber">{{ this.totalSlides | number:'2.0' }}</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
 </div>
 
-<app-whyiceiptwala></app-whyiceiptwala>  
+<app-whyiceiptwala></app-whyiceiptwala>
 <app-servicewala></app-servicewala>
 <app-aboutwala></app-aboutwala>
 <app-featurewala></app-featurewala>

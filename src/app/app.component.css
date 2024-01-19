@@ -2,59 +2,119 @@
 @import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Artifika&family=Roboto&display=swap');
 
 .appbutton {
-    padding: 6px 11px !important;
-    margin: 0px 20px 0px 10px;
+  color:white;
+  padding: 6px 11px !important;
+  position:absolute;
+  right:0.5%;
+  background-color: rgba(87, 0, 123, 1);
+  background-image: linear-gradient(19deg, rgba(102, 117, 247, 1) 0%, rgba(102, 117, 247, 1) 100%);
 }
 
-/* Login button */
+.productLinks {
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.productContainer {
+  display: flex;
+  align-items: center;
+  width: 170px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+  width: 530px;
+}
+
+@media (min-width: 768px) and (max-width:1070px) {
+  .container {
+    width: 430px !important;
+  }
+}
+
 .loginbutton {
     padding: 6px 32px;
 }
 
-/* Heading and Tagline */
-
-.heading {
-    font-family: 'Artifika', serif;
-}
-
-.subheading {
-    font-family: 'Aref Ruqaa', serif;
-}
-
 .navbar-nav>li>a {
-    color: rgba(white, 0.9) !important;
+  color: rgba(74, 85, 104, 1) !important;
+  font-weight: 500;
 }
 
 .navbar-nav>li>a:hover {
-    color: #ff8057 !important;
+  color: #ff8057 !important;
 }
 
-/* 
-font-family: 'Roboto', sans-serif; */
-/* font-family: 'Aref Ruqaa', serif;
-font-family: 'Artifika', serif;
-font-family: 'Roboto', sans-serif; */
+.navbar-nav {
+  margin: auto !important;
+}
+
+.logo2>img {
+  font-size: 10px;
+  width: 20px;
+  height: 10px;
+}
+
+.logo {
+  float: left;
+}
+
 
 @media screen and (min-width: 200px) and (max-width: 991px) {
 
-    .appbutton {
-        padding: 6px 11px !important;
-        margin: 0px 5px 5px 0px;
-    }
+  .appbutton {
+    padding: 6px 11px !important;
+    margin: 0px 5px 5px 0px;
+    position: static !important;
+  }
 
-    /* Login button */
-    .loginbutton {
-        margin-top: 10px;
-    }
+  .loginbutton {
+    margin-top: 10px;
+  }
+
+  .navbar-nav {
+    display: flex !important;
+    align-items: center !important;
+  }
+}
+
+.product {
+  color: rgba(74, 85, 104, 1);
+}
+
+.product:hover {
+  color: #ff8057 !important;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.filterBox {
+  position: absolute;
+  /* left: -230% !important; */
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  display: none;
+}
+
+.filterBox.show {
+  display: block;
+}
+
+.flex-item {
+  flex-basis: 50px;
+}
+
+.filterIcon {
+  cursor: pointer;
 }
 
 
-.logo2>img {
-    font-size: 10px;
-    /* max-inline-size: 20px; 
-    /* height: 20px;
-    width: 20px;
-    background-size: 20px 20px;*/
-    width: 20px;
-    height: 10px;
-}
+
+

@@ -6,15 +6,17 @@ import { GstComponent } from './components/gst/gst.component';
 import { ScanpayComponent } from './components/scanpay/scanpay.component';
 import { SelfcheckoutComponent } from './components/selfcheckout/selfcheckout.component';
 import { WGmanagementComponent } from './components/wgmanagement/wgmanagement.component';
+import { IndustryComponent } from './components/industry/industry.component';
 
 const routes:Routes=[
-  
+
   { path : 'wgmanagement', component : WGmanagementComponent },
   { path : 'gst', component : GstComponent },
   { path : 'erp', component : ErpComponent },
   { path : 'scanpay', component : ScanpayComponent },
   { path : 'selfcheckout', component : SelfcheckoutComponent},
-  { path : 'empmanagement', component : EmpmanagementComponent}
+  { path : 'empmanagement', component : EmpmanagementComponent},
+  { path : 'industry', component : IndustryComponent},
 ]
 
 
