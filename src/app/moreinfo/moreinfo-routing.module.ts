@@ -7,6 +7,7 @@ import { ScanpayComponent } from './components/scanpay/scanpay.component';
 import { SelfcheckoutComponent } from './components/selfcheckout/selfcheckout.component';
 import { WGmanagementComponent } from './components/wgmanagement/wgmanagement.component';
 import { IndustryComponent } from './components/industry/industry.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 const routes:Routes=[
 
@@ -17,6 +18,7 @@ const routes:Routes=[
   { path : 'selfcheckout', component : SelfcheckoutComponent},
   { path : 'empmanagement', component : EmpmanagementComponent},
   { path : 'industry', component : IndustryComponent},
+  { path : 'about', component : AboutUsComponent},
 ]
 
 
