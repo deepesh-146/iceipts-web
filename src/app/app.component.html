@@ -13,7 +13,7 @@
       <ul class="navbar-nav navbar-center links" id="mySidenav">
 
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active" fragment="services">Services</a>
+          <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active" fragment="home">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" [routerLink]="['/moreinfo/about']" routerLinkActive="active" >About Us</a>
@@ -24,53 +24,79 @@
               <span class = "product" style = "color: rgba(74, 85, 104, 1);">Product</span>
             </a>
             <div class="filterBox" [ngClass]="{'show': isFilterVisible}">
-              <div class="container" style = "display: flex;padding: 20px;width: 530px;">
+              <div class="container" >
                 <div class="row">
-                  <div style = "display: flex;align-items: center;width: 170px;cursor: pointer;">
+                  <div style = "display: flex;align-items: center;width: 170px;cursor: pointer;" [routerLink]="['/product/inventory-management']">
                     <div style = "padding: 10px;">
                       <img src = "../assets/images/B2B.png" alt = "Inventory Management" width = "40" height = "40" />
                     </div>
                     <div class = "productLinks">Inventory <br />Management </div>
                   </div>
-                  <div style = "display: flex;align-items: center;width: 170px;cursor: pointer;">
+                  <div style = "display: flex;align-items: center;width: 170px;cursor: pointer;" [routerLink]="['/product/accounting']">
                     <div style = "padding: 10px;">
-                      <img src = "../assets/images/B2B.png" alt = "Mining" width = "40" height = "40" />
+                      <img src = "../assets/images/B2B.png" alt = "Accounting" width = "40" height = "40" />
                     </div>
                     <div class = "productLinks">Accounting</div>
                   </div>
-                  <div style = "display: flex;align-items: center;width: 170px;cursor: pointer;">
-                    <div style = "padding: 10px;">
-                      <img src = "../assets/images/B2B.png" alt = "Crusher Unit" width = "40" height = "40" />
-                    </div>
-                    <div class = "productLinks">Crusher <br /> Unit</div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div style = "display: flex;align-items: center;width: 170px;cursor: pointer;">
+                  <div style = "display: flex;align-items: center;width: 170px;cursor: pointer;" [routerLink]="['/product/HRMS']">
                     <div style = "padding: 10px;">
                       <img src = "../assets/images/B2B.png" alt = "HRMS" width = "40" height = "40" />
                     </div>
                     <div class = "productLinks">HRMS</div>
                   </div>
-                  <div style = "display: flex;align-items: center;width: 170px;cursor: pointer;">
+                  <div style = "display: flex;align-items: center;width: 170px;cursor: pointer;" [routerLink]="['/product/warehouse-management']">
                     <div style = "padding: 10px;">
                       <img src = "../assets/images/B2B.png" alt = "Warehouse Management" width = "40" height = "40" />
                     </div>
                     <div class = "productLinks">Warehouse <br /> Management</div>
                   </div>
-                  <div style = "display: flex;align-items: center;width: 170px;cursor: pointer;">
+                  <div style = "display: flex;align-items: center;width: 170px;cursor: pointer;" [routerLink]="['/product/GST-filling']">
+                    <div style = "padding: 10px;">
+                      <img src = "../assets/images/B2B.png" alt = "GST Filling" width = "40" height = "40" />
+                    </div>
+                    <div class = "productLinks">GST <br /> Filling</div>
+                  </div>
+                  <div style = "display: flex;align-items: center;width: 170px;cursor: pointer;" [routerLink]="['/product/campaign-management']">
                     <div style = "padding: 10px;">
                       <img src = "../assets/images/B2B.png" alt = "Campaign Management" width = "40" height = "40" />
                     </div>
                     <div class = "productLinks">Campaign <br /> Management</div>
                   </div>
-                </div>
-                <div class="row">
-                  <div style = "display: flex;align-items: center;width: 170px;cursor: pointer;">
+                  <div style = "display: flex;align-items: center;width: 170px;cursor: pointer;" [routerLink]="['/product/crusher-unit']">
+                    <div style = "padding: 10px;">
+                      <img src = "../assets/images/B2B.png" alt = "Crusher Unit" width = "40" height = "40" />
+                    </div>
+                    <div class = "productLinks">Crusher <br /> Unit</div>
+                  </div>
+                  <div style = "display: flex;align-items: center;width: 170px;cursor: pointer;" [routerLink]="['/product/transporting']">
+                    <div style = "padding: 10px;">
+                      <img src = "../assets/images/B2B.png" alt = "Transporting" width = "40" height = "40" />
+                    </div>
+                    <div class = "productLinks">Transporting</div>
+                  </div>
+                  <div style = "display: flex;align-items: center;width: 170px;cursor: pointer;" [routerLink]="['/product/CRM']">
+                    <div style = "padding: 10px;">
+                      <img src = "../assets/images/B2B.png" alt = "CRM" width = "40" height = "40" />
+                    </div>
+                    <div class = "productLinks">CRM</div>
+                  </div>
+                  <div style = "display: flex;align-items: center;width: 170px;cursor: pointer;" [routerLink]="['/product/expenses-management']">
+                    <div style = "padding: 10px;">
+                      <img src = "../assets/images/B2B.png" alt = "Expenses Management" width = "40" height = "40" />
+                    </div>
+                    <div class = "productLinks">Expenses <br /> Management</div>
+                  </div>
+                  <div style = "display: flex;align-items: center;width: 190px;cursor: pointer;" [routerLink]="['/product/guarantee-and-warranty-management']">
                     <div style = "padding: 10px;">
                       <img src = "../assets/images/B2B.png" alt = "Employee Management" width = "40" height = "40" />
                     </div>
-                    <div class = "productLinks">Employee <br /> Management</div>
+                    <div class = "productLinks">Guarantee And <br /> Warranty Management</div>
+                  </div>
+                  <div style = "display: flex;align-items: center;width: 170px;cursor: pointer;" [routerLink]="['/product/appointment']">
+                    <div style = "padding: 10px;">
+                      <img src = "../assets/images/B2B.png" alt = "Appointment" width = "40" height = "40" />
+                    </div>
+                    <div class = "productLinks">Appointment</div>
                   </div>
                 </div>
               </div>
@@ -87,7 +113,7 @@
           <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active" fragment="contact">Contact</a>
         </li>
         <li class="nav-item">
-          <button class="btn appbutton" style = "color: white;">Mobile App</button>
+          <button class="appbutton">Request for a Demo</button>
         </li>
       </ul>
 

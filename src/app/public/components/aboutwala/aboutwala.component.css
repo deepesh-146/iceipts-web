@@ -1,10 +1,149 @@
+
+  .container5{
+    max-width: 100%;
+    width: 1170px;
+    margin: auto;
+    height:800px ;
+  }
+
+  row{
+    display: flex;
+  }
+
+.card1{
+  box-sizing: border-box;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  padding: 16px;
+  text-align: center;
+  background-color: whitesmoke;
+  width: 520px;
+  height: 210px;
+  margin-left: 50px;
+  margin-top: -10px;
+}
+
+.card2{
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  padding: 16px;
+  text-align: center;
+  background-color: whitesmoke;
+  width: 520px;
+  height: 210px;
+  margin-left: 230px;
+  margin-top: -10px;
+
+}
+
+.card3 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  padding: 16px;
+  text-align: center;
+  background-color:whitesmoke;
+  width: 520px;
+  height: 210px;
+  margin-left: -170px;
+  margin-top: 280px;
+
+}
+
+.card4 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  padding: 16px;
+  background-color: whitesmoke;
+  width: 520px;
+  height: 210px;
+  margin-left: 50px;
+  margin-top: -240px;
+  position: absolute;
+
+}
+
+.card5 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  background-color: whitesmoke;
+  width: 520px;
+  height: 210px;
+ margin-left: -350px;
+  position: absolute;
+  margin-top: 50px;
+
+}
+
+
+.card6 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  background-color: whitesmoke;
+  width: 520px;
+  height: 210px;
+  margin-left: -170px;
+  margin-top: 50px;
+  position: absolute;
+
+}
+
+p {
+  text-align: start;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 120px;
+}
+
+h5 {
+  margin-left:5px ;
+  text-align: start;
+  margin-top: auto;
+  padding-left: 120px;
+}
+
+.Icon{
+  float: left;
+  margin: 10px;
+  width: 40%;
+  max-width: 60px;
+  max-height: 100px;
+  margin-bottom: 5px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+h4 {
+  margin-left:5px ;
+  text-align: start;
+  margin-top: auto;
+  padding-left: 120px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 p {
     text-align: justify;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-/* About Us Page */
-
 
 .top {
     display: block;
@@ -30,28 +169,13 @@ p {
 
 
 @media (min-width: 768px) and (max-width: 991px) {
-    /* .content {
-        top:40%;
-        left:33%;
-        right:15%;
-        transform: translate(-50%, -50%);
-        font-size: 14px;
-    } */
 }
 
 
 @media (min-width: 200px) and (max-width: 768px) {
-/* 
-    .content {
-        top:40%;
-        left:32%;
-        right:10%;
-        transform: translate(-50%, -50%);
-        font-size: 14px;
-    } */
+
 }
 
-/* vision Page */
 
 
 .vision {
@@ -66,7 +190,6 @@ p {
 }
 
 
-/* Why Iceipts */
 
 .whyHeading {
     width: 50%;
@@ -93,7 +216,7 @@ p {
         margin:0px;
         padding:0px;
       }
-    
+
   }
 
   @media (min-width: 768px) and (max-width: 991px) {
@@ -110,50 +233,4 @@ p {
       }
 
   }
- /* old about page  */
- 
-
-
-/* .container1 {
-    position: relative;
-    width: 100%;
-    height: auto;
-    background-color:#f6f9fc;
-}
-
-.container1 > img {
-    width:100%;
-    display: block;
-} */
-
-/* .content {
-    position:absolute;
-    top:40%;
-    left:30%;
-    right:20%;
-    transform: translate(-50%, -50%);
-    font-size: 15px;
-} */
-
-/* Old vision page */
-
-/* .container2 {
-    height: auto;
-    position: relative;
-    width: 100%;
-    background-color:#27076a;
-    margin-top: 10px;
-} */
-
-/* .container2 > founderPic {
-    width:100%;
-    display: block;
-} */
-/* 
-.content2 {
-    position:absolute;
-    top:80%;
-    left:30%;
-    transform: translate(-50%, -50%);
-    font-size: 15px;
-} */
+   */

@@ -1,5 +1,67 @@
-<!-- Testimonial Start -->
-<section class="section bg-light" id="clients">
+<section>
+  <div class = "container-fluid">
+    <div class = "commentSection">
+      <h2 class = "heading mb-5">Why Customers love <br /> working with us</h2>
+      <p class="comment">
+        {{ currentCustomer?.customerComment }}
+      </p>
+      <img src = "../../../../assets/images/comma2.png" alt = "left-comma" class = "leftComma">
+      <img src = "../../../../assets/images/comma2.png" alt = "right-comma" class = "rightComma">
+
+      <img src = "../../../../assets/images/arrow-left.png" alt = "left-arrow" class = "leftArrow" (click)="onArrowClick('left')">
+      <img src = "../../../../assets/images/arrow-left.png" alt = "right-arrow" class = "righhArrow" (click)="onArrowClick('right')">
+    </div>
+    <div class = "customerSection">
+      <div class = "customers" *ngFor="let item of customer; let i = index" (slide)="onSlide($event.current)">
+        <img [src]="item.customerImage" alt="" class="img-fluid d-block rounded-circle" width = "150" height = "150" [ngStyle]="{ 'opacity': i === currentSlide ? 1 : 0.3 }">
+        <h6 class="mb-0 text-dark" style = "font-size: 18px;" [ngStyle]="{ 'opacity': i === currentSlide ? 1 : 0.3 }">{{ item.customerName }}</h6>
+        <p class="text-muted mb-0" style = "font-size: 16px;" [ngStyle]="{ 'opacity': i === currentSlide ? 1 : 0.3 }">{{ item.customerOccupation }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+        <!-- Without any doubt I recommend iceipts Solutions as one of the best ERP agencies. One of the best agencies I’ve came across so far. Wouldn’t be hesitated to introduce their work to someone else. -->
+
+
+      <!-- <div id = "customerTwo" style = "display: flex;flex-direction: column;align-items: center;">
+        <img src="assets/images/user/img-1.jpg" alt="" class="img-fluid d-block rounded-circle" width = "150" height = "150">
+        <h6 class="mb-0 text-dark" style = "font-size: 18px;">Roberta Guevara</h6>
+        <p class="text-muted mb-0" style = "font-size: 16px;">Web Developer</p>
+      </div>
+      <div id = "customerThree" style = "display: flex;flex-direction: column;align-items: center;">
+        <img src="assets/images/user/img-1.jpg" alt="" class="img-fluid d-block rounded-circle" width = "150" height = "150">
+        <h6 class="mb-0 text-dark" style = "font-size: 18px;">Roberta Guevara</h6>
+        <p class="text-muted mb-0" style = "font-size: 16px;">Web Developer</p>
+      </div>
+      <div id = "customerFour" style = "display: flex;flex-direction: column;align-items: center;">
+        <img src="assets/images/user/img-1.jpg" alt="" class="img-fluid d-block rounded-circle" width = "150" height = "150">
+        <h6 class="mb-0 text-dark" style = "font-size: 18px;">Roberta Guevara</h6>
+        <p class="text-muted mb-0" style = "font-size: 16px;">Web Developer</p>
+      </div>
+      <div id = "customerFive" style = "display: flex;flex-direction: column;align-items: center;">
+        <img src="assets/images/user/img-1.jpg" alt="" class="img-fluid d-block rounded-circle" width = "150" height = "150">
+        <h6 class="mb-0 text-dark" style = "font-size: 18px;">Roberta Guevara</h6>
+        <p class="text-muted mb-0" style = "font-size: 16px;">Web Developer</p>
+      </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <section class="section bg-light" id="clients">
   <div class="container">
     <div class="row justify-content-center clientHeading">
       <div class="col-lg-12 col-md-8">
@@ -18,17 +80,11 @@
       </div>
     </div>
   </div>
-</section>
-<section class="section bg-light">
-  <div class="container">
+</section> -->
+<!-- <section class="section bg-light"> -->
+  <!-- <div class="container">
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <!-- <img
-            class="img-fluid client"
-            style = "width: 100% !important;"
-            src="../../../assets/images/clients.png"
-            alt=""
-          />    -->
         <div class="row">
           <div class="column col-lg-4 col-md-6 col-sm-12">
             <div class="card">
@@ -64,7 +120,6 @@
 
           <div class="column col-lg-4 col-md-6 col-sm-12">
             <div class="card">
-              <!-- <p class="text-muted text-justify mx-3">Our digital receipt solution is built to make the claiming process more accessible.</p>  -->
               <p class="text-muted text-justify mx-3">The platform offers solution for warranty and maintenance
                 management, ERP, and GST compliance..</p>
               <ul class="list-unstyled f-18 text-warning my-2 text-center">
@@ -83,54 +138,9 @@
     </div>
 
     <div class="content mt-5">
-      <!-- <div class="row">
-            <div class="column col-lg-4 col-md-6 col-sm-12 my-3">
-                <div class="card">
-                    <p class="text-muted text-justify mx-3">The platform offers solution for warranty and maintainance management, ERP, and GST compliance.</p>
-                    <ul class="list-unstyled f-18 text-warning my-2 text-center">
-                      <li class="list-inline-item mr-1"><i class="mdi mdi-star"></i></li>
-                      <li class="list-inline-item mr-1"><i class="mdi mdi-star"></i></li>
-                      <li class="list-inline-item mr-1"><i class="mdi mdi-star"></i></li>
-                      <li class="list-inline-item mr-1"><i class="mdi mdi-star"></i></li>
-                      <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                    </ul>  
-                    <h5 class = "text-center my-2 text-primary">Emily Watson</h5>
-                    <h5 class = "text-center my-2">FIFM</h5>
-                </div>
-            </div>
-          
-            <div class="column col-lg-4 col-md-6 col-sm-12 my-3">
-              <div class="card">
-                <p class="text-muted text-justify mx-3">B2C customers can manage all of their product warranties on the platform making things easier.</p>
-                <ul class="list-unstyled f-18 text-warning my-2 text-center">
-                  <li class="list-inline-item mr-1"><i class="mdi mdi-star"></i></li>
-                  <li class="list-inline-item mr-1"><i class="mdi mdi-star"></i></li>
-                  <li class="list-inline-item mr-1"><i class="mdi mdi-star"></i></li>
-                  <li class="list-inline-item mr-1"><i class="mdi mdi-star"></i></li>
-                  <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                </ul>  
-                <h5 class = "text-center my-2 text-primary">Emily Watson</h5>
-                <h5 class = "text-center my-2">FIGO</h5>
-              </div>
-            </div>
-            
-            <div class="column col-lg-4 col-md-12 col-sm-12 my-3">
-              <div class="card">
-                <p class="text-muted text-justify mx-3">Our digital receipt solution is built to make the claiming process more accessible to everyone.</p> 
-                <ul class="list-unstyled f-18 text-warning my-2 text-center">
-                  <li class="list-inline-item mr-1"><i class="mdi mdi-star"></i></li>
-                  <li class="list-inline-item mr-1"><i class="mdi mdi-star"></i></li>
-                  <li class="list-inline-item mr-1"><i class="mdi mdi-star"></i></li>
-                  <li class="list-inline-item mr-1"><i class="mdi mdi-star"></i></li>
-                  <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                </ul>  
-                <h5 class = "text-center my-2 text-primary">Emily Watson</h5>
-                <h5 class = "text-center my-2">Tone Me</h5>           
-              </div>
-            </div>
-        </div>             -->
+
     </div>
-  </div>
+  </div> -->
 
 
   <!-- LIst of Happy Clients
@@ -145,7 +155,7 @@
           <div class="title text-center mb-5">
             <h3 class="font-weight-normal text-dark">Our <span class="text-warning">Clients</span></h3>
             <!-- <p class="text-muted">Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero pulvinar
-              hendrerit id lorem.lorem 5</p> 
+              hendrerit id lorem.lorem 5</p>
           </div>
         </div>
       </div>
@@ -155,7 +165,7 @@
               class="font-weight-medium text-warning">Happy Clients </span></h3>
           <div class="testi-border my-4"></div>
           <!-- <p class="text-muted">Itaque earum rerum tenetur a sapiente delectus ut aut reiciendis voluptatibus maiores
-            alias consequatur.</p> 
+            alias consequatur.</p>
         </div>
         <div class="col-lg-8 testi-carousel">
           <owl-carousel-o [options]="testimonialOptions">
@@ -296,7 +306,7 @@
             </ng-template>
           </owl-carousel-o>
         </div>
-      </div> 
+      </div>
     </div> -->
-</section>
+<!-- </section> -->
 <!-- Testimonial End -->

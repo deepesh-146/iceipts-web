@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+
+.heading {
+  /* margin-bottom: 20px; */
+  font-family: "Caveat Brush", cursive;
+  font-weight: 400;
+  font-size: 52px;
+  color: rgba(26, 32, 44, 1);
+}
+
+.para {
+  text-align: justify;
+  padding: 15px;
+  /* width: 500px; */
+  color: rgba(25, 24, 37, 0.5);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100vh;
+  -ms-overflow-style: none;
+}
+.container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.slider-container {
+  /* overflow: auto; */
+  white-space: nowrap;
+  /* overflow-x: auto; */
+  width: 100%;
+  overflow: auto; /* Add this to enable scrolling */
+
+  /* Hide the scrollbar */
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: transparent transparent; /* Firefox */
+}
+
+/* Hide the scrollbar for Webkit browsers (Chrome, Safari) */
+.slider-container::-webkit-scrollbar {
+  width: 6px; /* Adjust the width as needed */
+  }
+
+  .slider-container::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Hide the thumb */
+  }
+
+.feature-section {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  background-color: #f9f9f9;
+}
+
+.feature-item {
+  width: 200px;
+  height: auto;
+  margin: 10px;
+  text-align: center;
+  display: block;
+}
+
+.feature-item img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #ccc;
+  border-bottom: none;
+  border-radius: 8px;
+}
+
+.feature-content {
+  padding: 10px;
+}
+
+.read-more {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+}
+
+.fixed-image {
+  position:fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+

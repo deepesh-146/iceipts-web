@@ -6,8 +6,29 @@
   padding: 6px 11px !important;
   position:absolute;
   right:0.5%;
-  background-color: rgba(87, 0, 123, 1);
-  background-image: linear-gradient(19deg, rgba(102, 117, 247, 1) 0%, rgba(102, 117, 247, 1) 100%);
+  background: white;
+  color:#FC7643;
+  border: solid 1px #FC7643;
+
+  /* background-color: #2132CC; */
+  /* background-color: rgba(87, 0, 123, 1);
+  background-image: linear-gradient(19deg, rgba(102, 117, 247, 1) 0%, rgba(102, 117, 247, 1) 100%); */
+}
+
+/* .getStarted {
+  font-size: 12px;
+  text-align: center;
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: solid 1px #FC7643;
+  float: left;
+  background: white;
+  color:#FC7643;
+  font-weight: 600;
+} */
+
+.appbutton:hover {
+  background: rgba(252, 118, 67, 0.1);
 }
 
 .productLinks {
@@ -25,12 +46,13 @@
 .container {
   display: flex;
   padding: 20px;
-  width: 530px;
+  width: 400px !important;
 }
 
-@media (min-width: 768px) and (max-width:1070px) {
+@media (min-width: 200px) and (max-width:850px) {
   .container {
-    width: 430px !important;
+    flex-direction: column;
+    flex-basis: 200px !important;
   }
 }
 
