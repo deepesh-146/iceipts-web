@@ -4,6 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { MoreinfoComponent } from './moreinfo/moreinfo.component';
 import { PublicComponent } from './public/public.component';
+import { IndustryComponent } from './industry/industry.component';
+import { ProductComponent } from './product/product.component';
 
 
 const routes: Routes = [
@@ -16,9 +18,14 @@ const routes: Routes = [
   { path : 'moreinfo' , component : MoreinfoComponent ,
     loadChildren:()=>import('./moreinfo/moreinfo.module').then(x=>x.MoreinfoModule)
   },
-
+  { path : 'industry' , component : IndustryComponent ,
+    loadChildren:()=>import('./industry/industry.module').then(x=>x.IndustryModule)
+  },
+  { path : 'product' , component : ProductComponent ,
+    loadChildren:()=>import('./product/product.module').then(x=>x.ProductModule)
+  },
   { path : '**' , component : HomeComponent}
-  
+
 ];
 
 @NgModule({

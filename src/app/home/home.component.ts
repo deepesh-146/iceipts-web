@@ -28,7 +28,6 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.route.fragment.subscribe((fragment: string) => {
       this.fragment = fragment;
-      console.log('fragment', this.fragment);
       if (this.fragment) {
         setTimeout(() => {
           this.scroll(this.fragment);
