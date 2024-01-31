@@ -8,6 +8,7 @@ import { SelfcheckoutComponent } from './components/selfcheckout/selfcheckout.co
 import { WGmanagementComponent } from './components/wgmanagement/wgmanagement.component';
 import { IndustryComponent } from './components/industry/industry.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 const routes:Routes=[
 
@@ -19,6 +20,7 @@ const routes:Routes=[
   { path : 'empmanagement', component : EmpmanagementComponent},
   { path : 'industry', component : IndustryComponent},
   { path : 'about', component : AboutUsComponent},
+  { path : 'contact', component : ContactComponent},
 ]
 
 

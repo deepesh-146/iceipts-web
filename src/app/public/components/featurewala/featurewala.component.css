@@ -99,4 +99,9 @@
   pointer-events: none;
 }
 
-
+hr {
+  width: 69px;
+  height: 5px;
+  border: none;
+  background: linear-gradient(to right, rgba(242, 113, 65, 1), rgba(17, 1, 82, 1));
+}

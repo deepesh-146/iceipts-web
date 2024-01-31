@@ -1,4 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
 
+
+.heading {
+  margin-bottom: 20px;
+  font-family: "Caveat Brush", cursive;
+  font-weight: 400;
+  font-size: 52px;
+  color: rgba(26, 32, 44, 1);
+}
+
+.content {
+  color: rgba(25, 24, 37, 0.5);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 30px;
+  text-align: justify;
+  padding: 0px 30px;
+}
+
+hr {
+  width: 69px;
+  height: 5px;
+  border: none;
+  background: linear-gradient(to right, rgba(242, 113, 65, 1), rgba(17, 1, 82, 1));
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
   .container5{
     max-width: 100%;
     width: 1170px;
@@ -135,7 +173,7 @@ h4 {
 
 
 
-
+ */
 
 
 
