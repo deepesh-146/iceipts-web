@@ -49,6 +49,13 @@
   width: 400px !important;
 }
 
+@media (min-width: 992px) and (max-width: 1110px) {
+
+  ul {
+    padding-right: 150px !important;
+  }
+}
+
 @media (min-width: 200px) and (max-width:850px) {
   .container {
     flex-direction: column;

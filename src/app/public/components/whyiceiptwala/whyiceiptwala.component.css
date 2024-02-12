@@ -24,6 +24,11 @@
   width: 200px;
   /* margin-right: 50px; */
   height: 400px;
+  position: absolute;
+  right: 0;
+  z-index: 0;
+  min-height: 500px;
+  margin:0;
 }
 
 hr {
@@ -33,6 +38,11 @@ hr {
   background: linear-gradient(to right, rgba(242, 113, 65, 1), rgba(17, 1, 82, 1));
 }
 
+@media screen and (max-width: 992px) {
+  .blueBackground {
+    display: none;
+  }
+}
 
 
 /*
