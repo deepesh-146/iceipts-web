@@ -14,9 +14,9 @@
     </div>
     <div class = "customerSection">
       <div class = "customers" *ngFor="let item of customer; let i = index" (slide)="onSlide($event.current)">
-        <img [src]="item.customerImage" alt="" class="img-fluid d-block rounded-circle" width = "150" height = "150" [ngStyle]="{ 'opacity': i === currentSlide ? 1 : 0.3 }">
-        <h6 class="mb-0 text-dark" style = "font-size: 18px;" [ngStyle]="{ 'opacity': i === currentSlide ? 1 : 0.3 }">{{ item.customerName }}</h6>
-        <p class="text-muted mb-0" style = "font-size: 16px;" [ngStyle]="{ 'opacity': i === currentSlide ? 1 : 0.3 }">{{ item.customerOccupation }}</p>
+        <img [src]="item.customerImage" alt="" class="img-fluid d-block rounded-circle" width="150" height="150" [ngClass]="{'active': i === currentSlide, 'inactive': i !== currentSlide}">
+        <h6 class="customerName" style = "font-size: 18px;color: #000;" [ngClass]="{'active': i === currentSlide, 'inactive': i !== currentSlide}">{{ item.customerName }}</h6>
+        <p class="customerOccupation" style = "font-size: 16px;color:#000;" [ngClass]="{'active': i === currentSlide, 'inactive': i !== currentSlide}">{{ item.customerOccupation }}</p>
       </div>
     </div>
   </div>
