@@ -4,16 +4,17 @@
 .appbutton {
   color:white;
   padding: 6px 11px !important;
-  position:absolute;
-  right:0.5%;
+  /* position:relative;
+  right:1%; */
   background: white;
   color:#FC7643;
   border: solid 1px #FC7643;
-
-  /* background-color: #2132CC; */
-  /* background-color: rgba(87, 0, 123, 1);
-  background-image: linear-gradient(19deg, rgba(102, 117, 247, 1) 0%, rgba(102, 117, 247, 1) 100%); */
 }
+
+/* .language {
+  position: relative;
+  right: 1.5%;
+} */
 
 /* .getStarted {
   font-size: 12px;
@@ -49,12 +50,17 @@
   width: 400px !important;
 }
 
-@media (min-width: 992px) and (max-width: 1110px) {
+.container2 {
+  display: flex;
+  padding: 20px;
+}
+
+/* @media (min-width: 992px) and (max-width: 1110px) {
 
   ul {
     padding-right: 150px !important;
   }
-}
+} */
 
 @media (min-width: 200px) and (max-width:850px) {
   .container {
@@ -91,7 +97,7 @@
 }
 
 
-@media screen and (min-width: 200px) and (max-width: 991px) {
+/* @media screen and (min-width: 200px) and (max-width: 991px) {
 
   .appbutton {
     padding: 6px 11px !important;
@@ -107,7 +113,7 @@
     display: flex !important;
     align-items: center !important;
   }
-}
+} */
 
 .product {
   color: rgba(74, 85, 104, 1);
@@ -144,6 +150,25 @@
   cursor: pointer;
 }
 
+.nav-link:hover {
+  color: #FC7643 !important;
+}
 
+.navbarList {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 0px;
+  list-style: none;
+  padding-left: 0px;
+  margin-left: auto;
+}
 
+@media screen and (max-width: 991px) {
+  .navbarList {
+    display: flex;
+    flex-direction: column !important;
+    /* gap: 1rem; */
+  }
+}
 

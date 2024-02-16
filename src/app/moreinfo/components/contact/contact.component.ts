@@ -9,6 +9,8 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 export class ContactComponent implements OnInit {
 
   contactForm: FormGroup;
+  selectedAddress: string = 'address1'; // Default to address1
+
 
   constructor(private formBuilder: FormBuilder) { }
 
@@ -20,6 +22,11 @@ export class ContactComponent implements OnInit {
       phone: ['', [Validators.required, Validators.pattern("^[0-9]*$"), Validators.minLength(10), Validators.maxLength(10), this.trimValidator]],
       message: ['', [Validators.required, this.trimValidator]]
     });
+
+  }
+
+  selectAddress(event: any) {
+    this.selectedAddress = event.target.value;
   }
 
   submitForm() {
