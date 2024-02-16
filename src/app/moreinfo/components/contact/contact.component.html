@@ -1,6 +1,6 @@
 <section class = "contact">
 
-  <div class="container-fluid" style = "margin-top: 110px;padding: 20px;">
+  <div class="container-fluid" style = "margin-top: 80px;padding: 20px;">
     <div class="row mb-5" style = "display: flex;flex-direction: column;align-items: center;text-align: center;">
       <h1 class = "heading">Contact Us</h1>
       <h4 class = "subHeading">We love meeting new people and helping them.</h4>
@@ -11,13 +11,13 @@
           <div style = "padding-right: 16px;">
             <img src="assets\images\mail.png" class="img-fluid">
           </div>
-          <span>icepts@gmail.com</span>
+          <span>sibanee@iceipts.com</span>
         </div>
         <div style="display: flex;justify-content: space-between;align-items: center;margin: 14px 0px;">
           <div style = "padding-right: 16px;">
             <img src="assets\images\mobile.png" class="img-fluid">
           </div>
-          <span>+1 (378) 400-1234</span>
+          <span>+971561944600</span>
         </div>
         <div style="display: flex;justify-content: space-between;align-items: center;margin: 14px 0px;">
           <div style = "background: white;padding: 16px;border-radius: 50%;">
@@ -87,6 +87,42 @@
               <button type="submit">Send Now <img src="../../../../assets/images/buttonArrow.png" class="img-fluid" /></button>
             </div>
           </form>
+      </div>
+      </div>
+    </div>
+
+    <div class="row mapContainer mt-5">
+      <div class="map">
+        <form>
+          <input type="radio" id="address1" name="address" value="address1" (change)="selectAddress($event)" checked>
+          <label for="address1" style = "margin-left: 1rem;">Address 1: Pune, Maharashtra 411021, India</label><br>
+          <input type="radio" id="address2" name="address" value="address2" (change)="selectAddress($event)">
+          <label for="address2" style = "margin-left: 1rem;">Address 2: 16th floor Tamouh Tower, Building 12, Al Reem, Marina Square, Abu Dhabi, UAE</label><br><br>
+        </form>
+
+        <div *ngIf="selectedAddress === 'address1'" class="map-address">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.16295649397
+          !2d73.83626657519171!3d18.521536782572174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+          1!3m3!1m2!1s0x3bc2bf48963c99d1%3A0x1710be8739659748!2sPune%2C%20Maharashtra%20411021%2C%20India!5e0!3m2!1sen!2sin!4v1705922641031!5m2!1sen!2sin"
+          style="border:0;border-radius: 40px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <div *ngIf="selectedAddress === 'address2'" class="map-address">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3632.6477435942316
+          !2d54.37722851540595!3d24.45388494777308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+          1!3m3!1m2!1s0x3e5e660d0f7a79e7%3A0x8d22fa5f5c8ad2b7!2s16th%20floor%20Tamouh%20Tower%2C%20Building%2012%2CAl%20Reem%2C%20Marina%20Square%2C%20Abu%20Dhabi%2C%20UAE!5e0!3m2!1sen!2sae!4v1644876754373!5m2!1sen!2sae"
+          style="border:0;border-radius: 40px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
 
           <!-- <form [formGroup]="contactForm">
             <div class="row">
@@ -129,22 +165,6 @@
               <button type="submit" name="" value="Send">Send Now <img src = "../../../../assets/images/buttonArrow.png" class = "img-fluid"  /></button>
             </div>
           </form> -->
-      </div>
-      </div>
-    </div>
-    <div class="row mapContainer mt-5">
-      <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.16295649397
-        !2d73.83626657519171!3d18.521536782572174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
-        1!3m3!1m2!1s0x3bc2bf48963c99d1%3A0x1710be8739659748!2sMathematics%20department%20
-        Ferguson%20College!5e0!3m2!1sen!2sin!4v1705922641031!5m2!1sen!2sin"
-        style="border:0;border-radius: 40px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-    </div>
-  </div>
-
-</section>
 
 
 

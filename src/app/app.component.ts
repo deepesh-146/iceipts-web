@@ -14,9 +14,11 @@ export class AppComponent {
   public isCollapsed = true;
   isLoading: boolean;
   scroller:any;
-  isFilterVisible = false;
 
+  isFilterVisible = false;
+  isFilterVisible2 = false;
   isHovered: boolean = false;
+  isHovered2: boolean = false;
 
   ngOnInit() {
     this.isLoading = true;
@@ -32,6 +34,10 @@ export class AppComponent {
 
   toggleFilter(isHovered: boolean): void {
     this.isFilterVisible = isHovered;
+  }
+
+  toggleFilter2(isHovered2: boolean): void {
+    this.isFilterVisible2 = isHovered2;
   }
 
   goDown2() {
