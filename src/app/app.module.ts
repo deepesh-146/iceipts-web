@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+
 
 // import { LayoutsModule } from './layouts/layouts.module';
 
@@ -26,9 +28,9 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
         BrowserModule,
         BrowserAnimationsModule,
         NgbModule,
-        //PublicModule,
         AppRoutingModule,
-        PublicModule
+        PublicModule,
+        HttpClientModule
     ]
 })
 export class AppModule { }
