@@ -1,0 +1,269 @@
+<section class = "contact">
+
+  <div class="container-fluid" style = "margin-top: 80px;padding: 20px;">
+    <div class="row mb-5" style = "display: flex;flex-direction: column;align-items: center;text-align: center;">
+      <h1 class = "heading">Contact Us</h1>
+      <h4 class = "subHeading">We love meeting new people and helping them.</h4>
+    </div>
+    <div class = "row" style = "display: flex;justify-content: space-evenly;align-items: center;">
+      <div class = "leftSection mt-5" style="display: flex;flex-direction: column;padding: 30px;background-color: rgba(244, 240, 236, 1);border-radius: 25px;margin: 10px;">
+        <div style="display: flex;justify-content: space-between;align-items: center;margin: 14px 0px;">
+          <div style = "padding-right: 16px;">
+            <img src="assets\images\mail.png" class="img-fluid">
+          </div>
+          <span>sibanee@iceipts.com</span>
+        </div>
+        <div style="display: flex;justify-content: space-between;align-items: center;margin: 14px 0px;">
+          <div style = "padding-right: 16px;">
+            <img src="assets\images\mobile.png" class="img-fluid">
+          </div>
+          <span>+971561944600</span>
+        </div>
+        <div style="display: flex;justify-content: space-between;align-items: center;margin: 14px 0px;">
+          <div style = "background: white;padding: 16px;border-radius: 50%;">
+            <img src="assets\images\websiteLink.png" class="img-fluid">
+          </div>
+          <a href="http://www.iceipts.com" target="_blank" style = "color: black;">www.iceipts.com</a>
+        </div>
+      </div>
+      <div class = "rightSection mt-5" style = "flex-basis: 700px;padding: 30px;">
+        <div class="ContactForm">
+          <form [formGroup]="contactForm" (ngSubmit)="submitForm()">
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+                <div class="inputbox">
+                  <input type="text" formControlName="name" required>
+                  <span>Name</span>
+                </div>
+                <div *ngIf="contactForm.get('name').invalid && (contactForm.get('name').dirty || contactForm.get('name').touched)">
+                  <small *ngIf="contactForm.get('name').errors.required" style = "color: red;">Name is required.</small>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <div class="inputbox">
+                  <input type="text" formControlName="email" required>
+                  <span>Email</span>
+                </div>
+                <div *ngIf="contactForm.get('email').invalid && (contactForm.get('email').dirty || contactForm.get('email').touched)">
+                  <small *ngIf="contactForm.get('email').errors.required" style="color: red;">Email is required.</small>
+                  <small *ngIf="contactForm.get('email').errors.email" style="color: red;">Please enter a valid email address.</small>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+                <div class="inputbox">
+                  <input type="text" formControlName="subject" required>
+                  <span>Subject</span>
+                </div>
+                <div *ngIf="contactForm.get('subject').invalid && (contactForm.get('subject').dirty || contactForm.get('subject').touched)">
+                  <small *ngIf="contactForm.get('subject').errors.required" style = "color: red;">Subject is required.</small>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <div class="inputbox">
+                  <input type="text" formControlName="phone" required>
+                  <span>Phone</span>
+                </div>
+                <div *ngIf="contactForm.get('phone').invalid && (contactForm.get('phone').dirty || contactForm.get('phone').touched)">
+                  <small *ngIf="contactForm.get('phone').errors.required" style="color: red;">Phone Number is required.</small>
+                  <small *ngIf="contactForm.get('phone').errors.pattern" style="color: red;">Please enter a valid phone number.</small>
+                  <small *ngIf="contactForm.get('phone').errors.minlength || contactForm.get('phone').errors.maxlength" style="color: red;">Phone number must be 10 digits.</small>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="inputbox">
+                  <textarea formControlName="message" required></textarea>
+                  <span>Hello I am interested in:</span>
+                </div>
+                <div *ngIf="contactForm.get('message').invalid && (contactForm.get('message').dirty || contactForm.get('message').touched)">
+                  <small *ngIf="contactForm.get('message').errors.required" style = "color: red;">Message is required.</small>
+                </div>
+              </div>
+            </div>
+            <div style="float: right; margin-top: 8px;">
+              <button type="submit">Send Now <img src="../../../../assets/images/buttonArrow.png" class="img-fluid" /></button>
+            </div>
+          </form>
+      </div>
+      </div>
+    </div>
+
+    <div class="row mapContainer mt-5">
+      <div class="map">
+        <form>
+          <input type="radio" id="address1" name="address" value="address1" (change)="selectAddress($event)" checked>
+          <label for="address1" style = "margin-left: 1rem;">Address 1: Pune, Maharashtra 411021, India</label><br>
+          <input type="radio" id="address2" name="address" value="address2" (change)="selectAddress($event)">
+          <label for="address2" style = "margin-left: 1rem;">Address 2: 16th floor Tamouh Tower, Building 12, Al Reem, Marina Square, Abu Dhabi, UAE</label><br><br>
+        </form>
+
+        <div *ngIf="selectedAddress === 'address1'" class="map-address">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24143.44415744296!2d73.75709914492357!3d18.552114201938186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf9ab7b41cc1%3A0x636b61c6b23e47d3!2sPune%2C%20Maharashtra%20411021%2C%20India!5e0!3m2!1sen!2sin!4v1645630983115!5m2!1sen!2sin"
+          style="border:0;border-radius: 40px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <div *ngIf="selectedAddress === 'address2'" class="map-address">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.646176146109!2d54.3713736149812!3d24.479778360154392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e67b98b88a3cf%3A0xb0e8ed3fd8b7d2a6!2sTamouh%20Tower!5e0!3m2!1sen!2sae!4v1645630983115!5m2!1sen!2sae"
+          style="border:0;border-radius: 40px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+<app-footerwala></app-footerwala>
+
+
+
+          <!-- <form [formGroup]="contactForm">
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+                <div class="inputbox">
+                  <input type="text" name="" required="required">
+                  <span>Name</span>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <div class="inputbox">
+                  <input type="email" name="" required="required">
+                  <span>Email</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+                <div class="inputbox">
+                  <input type="text" name="" required="required">
+                  <span>Subject</span>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <div class="inputbox">
+                  <input type="number" name="" required="required">
+                  <span>Phone</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="inputbox">
+                  <textarea required="required"></textarea>
+                  <span>Hello I am interested in :</span>
+                </div>
+              </div>
+            </div>
+            <div style="float: right;margin-top:8px;">
+              <button type="submit" name="" value="Send">Send Now <img src = "../../../../assets/images/buttonArrow.png" class = "img-fluid"  /></button>
+            </div>
+          </form> -->
+
+
+
+
+<!-- <section class="section" id="features">
+
+    <div class="container">
+
+      <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-8">
+              <div class="title text-center mt-5 mb-5">
+                  <h1 class = "heading">Contact Us</h1>
+                  <h4 class = "subHeading">We love meeting new people and helping them.</h4>
+              </div>
+          </div>
+      </div>
+
+      <div class="container1">
+        <div class="contactinfo" style = "padding: 20px;background: rgba(244, 240, 236, 1);">
+            <div class="box" style="display: flex;align-items:center;justify-content:space-evenly;">
+                <div class="icon">
+                    <img src="assets\images\mail.png" class="">
+                </div>
+                <div class="email">
+                    <p>icepts@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="box" style="display: flex;align-items:center;justify-content:space-evenly;">
+                <div class="icon">
+                    <img src="assets\images\mobile.png" >
+                </div>
+                <div class="phone">
+                    <p>+1 (378) 400-1234</p>
+                </div>
+            </div>
+
+            <div class="box" style="display: flex;align-items:center;justify-content:space-evenly;">
+                <div class="icon" style = "background-color: white;">
+                    <img src="assets\images\websiteLink.png" >
+                </div>
+                <div class="phone">
+                  <p>www.iceipts.com</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="ContactForm">
+            <form>
+              <div class="row">
+                <div class="col-lg-6 col-md-12">
+                  <div class="inputbox">
+                    <input type="text" name="" required="required">
+                    <span>Name</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <div class="inputbox">
+                    <input type="email" name="" required="required">
+                    <span>Email</span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-12">
+                  <div class="inputbox">
+                    <input type="text" name="" required="required">
+                    <span>Subject</span>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <div class="inputbox">
+                    <input type="number" name="" required="required">
+                    <span>Phone</span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="inputbox">
+                    <textarea required="required"></textarea>
+                    <span>Hello I am interested in :</span>
+                  </div>
+                </div>
+              </div>
+              <div class="row" style="float: right;margin-top:8px;">
+                <button type="submit" name="" value="Send">Send Now <img src = "../../../../assets/images/buttonArrow.png" class = "img-fluid"  /></button>
+              </div>
+            </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.16295649397
+        !2d73.83626657519171!3d18.521536782572174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+        1!3m3!1m2!1s0x3bc2bf48963c99d1%3A0x1710be8739659748!2sMathematics%20department%20
+        Ferguson%20College!5e0!3m2!1sen!2sin!4v1705922641031!5m2!1sen!2sin" width="600"
+         height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+</section> -->

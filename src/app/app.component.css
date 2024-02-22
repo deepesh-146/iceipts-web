@@ -2,59 +2,173 @@
 @import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Artifika&family=Roboto&display=swap');
 
 .appbutton {
-    padding: 6px 11px !important;
-    margin: 0px 20px 0px 10px;
+  color:white;
+  padding: 6px 11px !important;
+  /* position:relative;
+  right:1%; */
+  background: white;
+  color:#FC7643;
+  border: solid 1px #FC7643;
 }
 
-/* Login button */
+/* .language {
+  position: relative;
+  right: 1.5%;
+} */
+
+/* .getStarted {
+  font-size: 12px;
+  text-align: center;
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: solid 1px #FC7643;
+  float: left;
+  background: white;
+  color:#FC7643;
+  font-weight: 600;
+} */
+
+.appbutton:hover {
+  background: rgba(252, 118, 67, 0.1);
+}
+
+.productLinks {
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.productContainer {
+  display: flex;
+  align-items: center;
+  width: 170px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+  width: 400px !important;
+}
+
+.container2 {
+  display: flex;
+  padding: 20px;
+}
+
+/* @media (min-width: 992px) and (max-width: 1110px) {
+
+  ul {
+    padding-right: 150px !important;
+  }
+} */
+
+@media (min-width: 200px) and (max-width:850px) {
+  .container {
+    flex-direction: column;
+    flex-basis: 200px !important;
+  }
+}
+
 .loginbutton {
     padding: 6px 32px;
 }
 
-/* Heading and Tagline */
-
-.heading {
-    font-family: 'Artifika', serif;
-}
-
-.subheading {
-    font-family: 'Aref Ruqaa', serif;
-}
-
 .navbar-nav>li>a {
-    color: rgba(white, 0.9) !important;
+  color: rgba(74, 85, 104, 1) !important;
+  font-weight: 500;
 }
 
 .navbar-nav>li>a:hover {
-    color: #ff8057 !important;
+  color: #ff8057 !important;
 }
 
-/* 
-font-family: 'Roboto', sans-serif; */
-/* font-family: 'Aref Ruqaa', serif;
-font-family: 'Artifika', serif;
-font-family: 'Roboto', sans-serif; */
-
-@media screen and (min-width: 200px) and (max-width: 991px) {
-
-    .appbutton {
-        padding: 6px 11px !important;
-        margin: 0px 5px 5px 0px;
-    }
-
-    /* Login button */
-    .loginbutton {
-        margin-top: 10px;
-    }
+.navbar-nav {
+  margin: auto !important;
 }
-
 
 .logo2>img {
-    font-size: 10px;
-    /* max-inline-size: 20px; 
-    /* height: 20px;
-    width: 20px;
-    background-size: 20px 20px;*/
-    width: 20px;
-    height: 10px;
+  font-size: 10px;
+  width: 20px;
+  height: 10px;
 }
+
+.logo {
+  float: left;
+}
+
+
+/* @media screen and (min-width: 200px) and (max-width: 991px) {
+
+  .appbutton {
+    padding: 6px 11px !important;
+    margin: 0px 5px 5px 0px;
+    position: static !important;
+  }
+
+  .loginbutton {
+    margin-top: 10px;
+  }
+
+  .navbar-nav {
+    display: flex !important;
+    align-items: center !important;
+  }
+} */
+
+.product {
+  color: rgba(74, 85, 104, 1);
+}
+
+.product:hover {
+  color: #ff8057 !important;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.filterBox {
+  position: absolute;
+  /* left: -230% !important; */
+  background-color: white;
+  /* border: 1px solid #ccc; */
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  display: none;
+}
+
+.filterBox.show {
+  display: block;
+}
+
+.flex-item {
+  flex-basis: 50px;
+}
+
+.filterIcon {
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #FC7643 !important;
+}
+
+.navbarList {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 0px;
+  list-style: none;
+  padding-left: 0px;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 991px) {
+  .navbarList {
+    display: flex;
+    flex-direction: column !important;
+    /* gap: 1rem; */
+  }
+}
+

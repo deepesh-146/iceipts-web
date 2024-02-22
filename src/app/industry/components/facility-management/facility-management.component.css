@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+h4, h1, h3 {
+  font-family: 'Caveat', cursive;
+  color:rgba(26, 32, 44, 1);
+}
+
+h1 {
+  margin-top: 60px;
+}
+
+h5 {
+  color: rgba(121, 121, 121, 1);
+  margin: 100px 0px 60px
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
+.buyNow {
+  background: rgba(242, 113, 65, 1);
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+}
+
+.leftComma {
+  width: 25px;
+  height: 30px;
+  rotate: 180deg;
+  position: absolute;
+  left: 46%;
+  bottom: 51%;
+}
+
+.rightComma {
+  width: 25px;
+  height: 30px;
+  rotate: 180deg;
+  position: absolute;
+  left: 49%;
+  bottom: 51%;
+}
+
+.leftBracket {
+  height:200px;
+  position: absolute;
+  left:-10%;
+  bottom:9%;
+}
+
+.rightBracket {
+  height:200px;
+  position: absolute;
+  right:-10%;
+  bottom:9%;
+  rotate: 180deg;
+}
+
+@media (min-width: 100px) and (max-width: 768px) {
+  h5 {
+    width:300px;
+    margin-left: 30%;
+    font-size: 18px;
+  }
+
+  .leftBracket {
+    left:16%;
+  }
+
+  .rightBracket {
+    right:16%;
+  }
+
+  .rightComma, .leftComma {
+    display: none;
+  }
+
+}
+
+@media (min-width: 550px) and (max-width: 700px) {
+  h5 {
+    width:300px;
+    margin-left: 26%;
+    font-size: 18px;
+  }
+
+}
+
+@media (min-width: 450px) and (max-width: 550px) {
+  h5 {
+    width:250px;
+    margin-left: 25%;
+    font-size: 15px;
+  }
+
+}
+
+@media (min-width: 350px) and (max-width: 450px) {
+  h5 {
+    width:200px;
+    margin-left: 25%;
+    font-size: 15px;
+  }
+}

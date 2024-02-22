@@ -1,5 +1,246 @@
+.footerBackground {
+  width: 100%;
+}
+
+.subscribeContainer {
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  width:60%;
+  position: absolute;
+  top: 176px;
+  left: 20%;
+  border-radius: 10px;
+}
+
+.subcribeContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputEmail {
+  display: flex;
+}
+
+.inputText {
+  border-right: none;
+  padding-left: 16px;
+  border: 2px solid rgba(10, 20, 47, 0.1);
+}
+
+.inputButton {
+  background: rgba(242, 113, 65, 1);
+  color: white;
+  border: 2px solid rgba(10, 20, 47, 0.1);
+}
+
+.menuItem {
+  cursor: pointer;
+  color: rgba(10, 20, 47, 1);
+}
+
+.menu {
+  display: flex;
+  gap:2rem;
+  flex-wrap: wrap;
+}
+
+.menuImages {
+  display: flex;
+  gap:2rem;
+  flex-wrap: wrap;
+}
+
+.bottom {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bottomLinks {
+  color: rgba(17, 1, 82, 1);
+}
+
+hr {
+  width: 67vw;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.bottonLogo {
+  width:100px;
+  height:20px;
+}
+
+.rightBottom {
+  display: flex;
+  gap:2rem;
+}
+
+.images {
+  width:20px;
+  height:20px;
+}
+
+.container {
+  margin-top: 120px;
+}
+
+.list {
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+}
+
+
+@media (min-width: 870px)  and (max-width: 1200px) {
+
+  .subscribeContainer {
+    width: 80%;
+    top: 120px;
+    left: 10%;
+  }
+
+}
+
+@media (min-width: 770px)  and (max-width: 870px) {
+
+  .subscribeContainer {
+    width: 90%;
+    top: 120px;
+    left: 5%;
+    padding: 24px;
+  }
+
+  .subcribeContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .inputText {
+    border-right: none;
+    padding: 8px;
+    border: 2px solid rgba(10, 20, 47, 0.1);
+  }
+
+  .container {
+    margin-top: 180px;
+  }
+
+}
+
+@media (min-width: 500px)  and (max-width: 770px) {
+
+  .subscribeContainer {
+    width: 90%;
+    top: 120px;
+    left: 5%;
+    padding: 24px;
+  }
+
+  .subcribeContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .inputText {
+    border-right: none;
+    padding: 8px;
+    border: 2px solid rgba(10, 20, 47, 0.1);
+  }
+
+  .container {
+    margin-top: 180px;
+  }
+
+}
+
+@media (min-width: 500px)  and (max-width: 770px) {
+
+  .subscribeContainer {
+    width: 95%;
+    top: 120px;
+    left: 2%;
+    padding: 24px;
+  }
+
+  .subcribeContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .inputText {
+    border-right: none;
+    padding: 8px;
+    border: 2px solid rgba(10, 20, 47, 0.1);
+  }
+
+  .container {
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 770px) {
+
+  .subscribeContainer {
+    width: 95%;
+    top: 120px;
+    left: 2%;
+    padding: 24px;
+  }
+
+  .subcribeContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu, .menuImages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .inputText {
+    border-right: none;
+    padding: 8px;
+    border: 2px solid rgba(10, 20, 47, 0.1);
+  }
+
+  .container {
+    margin-top: 200px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .inputEmail {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
 /* @import url('https://fonts.googleapis.com/css2?family=Artifika&family=Roboto&display=swap'); */
-/* 
+/*
 img{
     background-size: cover;
 }
@@ -9,7 +250,7 @@ img{
     left: 50%;
     padding: 10px 0px;
     transform: translate(-50%, -50%);
-    
+
   }
 
   .ceo{
@@ -25,13 +266,13 @@ img{
   }
 
   .footerbottom{
-    
+
     margin: 0px 30px;
       border-top-right-radius: 60%;
       border-bottom-left-radius: 60%;
       border-bottom-right-radius: 20%;
       border-top-left-radius: 20%;
-     
+
   }
 
   @media (min-width: 200px) and (max-width: 768px) {
@@ -39,12 +280,12 @@ img{
     .thought {
         position: absolute;
         font-size: 4.2em;
-        
+
     }
 
     .ceo {
         position: absolute;
-       
+
     }
 
     .ceoName {
@@ -53,7 +294,7 @@ img{
 }
   */
 
-  @import url('https://fonts.googleapis.com/css2?family=Artifika&family=Roboto&display=swap');
+  /* @import url('https://fonts.googleapis.com/css2?family=Artifika&family=Roboto&display=swap');
 
   .footertext {
     border-top-right-radius: 40%;
@@ -62,60 +303,60 @@ img{
     border-top-left-radius: 10%;
     margin: 0px 20px;
   }
-  
+
     .tagline {
       font-family: 'Artifika', serif;
       font-size: 1.5rem;
     }
-  
-    
+
+
     .ceo {
       font-family: 'Artifika', serif;
       font-size: 1rem;
     }
-  
+
     @media (min-width: 200px) and (max-width: 768px) {
-      
+
     .tagline {
       font-family: 'Artifika', serif;
       font-size: 1.2rem;
     }
-  
-    
+
+
     .ceo {
       font-family: 'Artifika', serif;
       font-size: 0.7rem;
       margin-left: 70%;
     }
-  
+
     .footertext {
       border-top-right-radius: 40%;
       border-bottom-left-radius: 40%;
       border-bottom-right-radius: 10%;
-      border-top-left-radius: 10%;  
+      border-top-left-radius: 10%;
       margin: 0px 20px;
     }
   }
-  
+
   @media (min-width: 768px) and (max-width: 991px) {
-      
+
     .tagline {
       font-family: 'Artifika', serif;
       font-size: 1.25rem;
     }
-  
-    
+
+
     .ceo {
       font-family: 'Artifika', serif;
       font-size: 0.7rem;
       margin-left: 70%;
     }
-  
+
     .footertext {
       border-top-right-radius: 40%;
       border-bottom-left-radius: 40%;
       border-bottom-right-radius: 10%;
-      border-top-left-radius: 10%;  
+      border-top-left-radius: 10%;
       margin: 0px 20px;
     }
-  }
+  } */

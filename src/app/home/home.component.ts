@@ -1,25 +1,33 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
   id: string;
-  fragment:any;
+  fragment: any;
 
+  images = [
+    '../../assets/images/slider-1.png',
+    '../../assets/images/slider-2.png',
+    '../../assets/images/slider-3.png',
+    '../../assets/images/slider-4.png',
+    '../../assets/images/slider-5.png',
+  ];
+  currentSlide = 1;
+  totalSlides = this.images.length;
+  progressPercentage = 20;
+  temp: any = 0;
+  maxProgressWidth: any;
 
-
-
-  constructor(private route:ActivatedRoute) { }
+  constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-  
     this.route.fragment.subscribe((fragment: string) => {
       this.fragment = fragment;
-      console.log('fragment', this.fragment);
       if (this.fragment) {
         setTimeout(() => {
           this.scroll(this.fragment);
@@ -28,11 +36,20 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  
+  onSlide(slideEvent: any) {
+    this.currentSlide = slideEvent;
+    this.updateProgressBar();
+  }
 
+  updateProgressBar() {
+    const value = String(this.currentSlide);
+    this.temp = value.slice(-1);
+    this.maxProgressWidth = 425;
+    const rawPercentage = ((this.temp + 1) / this.totalSlides) * 10 + 20;
+    this.progressPercentage = Math.min(rawPercentage, this.maxProgressWidth);
+  }
 
-
-scroll(id) {
+  scroll(id) {
     console.log('scroll to--', id);
     const elmnt = document.getElementById(id);
     elmnt.scrollIntoView({
@@ -41,8 +58,4 @@ scroll(id) {
       inline: 'nearest',
     });
   }
-
-
-
-
 }

@@ -8,6 +8,11 @@ import { GstComponent } from './components/gst/gst.component';
 import { ScanpayComponent } from './components/scanpay/scanpay.component';
 import { EmpmanagementComponent } from './components/empmanagement/empmanagement.component';
 import { SelfcheckoutComponent } from './components/selfcheckout/selfcheckout.component';
+import { IndustryComponent } from './components/industry/industry.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PublicModule } from "../public/public.module";
 
 
 
@@ -15,11 +20,13 @@ import { SelfcheckoutComponent } from './components/selfcheckout/selfcheckout.co
 
 
 @NgModule({
-  declarations: [WGmanagementComponent, MoreinfoComponent, ErpComponent, GstComponent, ScanpayComponent, EmpmanagementComponent, SelfcheckoutComponent],
-  imports: [
-    CommonModule,
-    MoreinfoRoutingModule
-    
-  ]
+    declarations: [WGmanagementComponent, MoreinfoComponent, ErpComponent, GstComponent, ScanpayComponent, EmpmanagementComponent, SelfcheckoutComponent, IndustryComponent, AboutUsComponent, ContactComponent],
+    imports: [
+        CommonModule,
+        MoreinfoRoutingModule,
+        ReactiveFormsModule,
+        FormsModule,
+        PublicModule
+    ]
 })
 export class MoreinfoModule { }
