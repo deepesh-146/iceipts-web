@@ -12,6 +12,7 @@ import { IndustryComponent } from './components/industry/industry.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PublicModule } from "../public/public.module";
 
 
 
@@ -19,12 +20,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
-  declarations: [WGmanagementComponent, MoreinfoComponent, ErpComponent, GstComponent, ScanpayComponent, EmpmanagementComponent, SelfcheckoutComponent, IndustryComponent, AboutUsComponent, ContactComponent],
-  imports: [
-    CommonModule,
-    MoreinfoRoutingModule,
-    ReactiveFormsModule,
-    FormsModule,
-  ]
+    declarations: [WGmanagementComponent, MoreinfoComponent, ErpComponent, GstComponent, ScanpayComponent, EmpmanagementComponent, SelfcheckoutComponent, IndustryComponent, AboutUsComponent, ContactComponent],
+    imports: [
+        CommonModule,
+        MoreinfoRoutingModule,
+        ReactiveFormsModule,
+        FormsModule,
+        PublicModule
+    ]
 })
 export class MoreinfoModule { }

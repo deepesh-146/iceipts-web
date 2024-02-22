@@ -15,13 +15,15 @@ import { CRMComponent } from './components/crm/crm.component';
 import { ExpensesManagementComponent } from './components/expenses-management/expenses-management.component';
 import { AppointmentComponent } from './components/appointment/appointment.component';
 import { GuaranteeAndWarrantyManagementComponent } from './components/guarantee-and-warranty-management/guarantee-and-warranty-management.component';
+import { PublicModule } from "../public/public.module";
 
 
 @NgModule({
-  declarations: [ProductComponent, InventoryManagementComponent, AccountingComponent, HRMSComponent, WarehouseManagementComponent, GstFillingComponent, CampaignManagementComponent, CrusherUnitComponent, TransportingComponent, CRMComponent, ExpensesManagementComponent, AppointmentComponent, GuaranteeAndWarrantyManagementComponent],
-  imports: [
-    CommonModule,
-    ProductRoutingModule
-  ]
+    declarations: [ProductComponent, InventoryManagementComponent, AccountingComponent, HRMSComponent, WarehouseManagementComponent, GstFillingComponent, CampaignManagementComponent, CrusherUnitComponent, TransportingComponent, CRMComponent, ExpensesManagementComponent, AppointmentComponent, GuaranteeAndWarrantyManagementComponent],
+    imports: [
+        CommonModule,
+        ProductRoutingModule,
+        PublicModule
+    ]
 })
 export class ProductModule { }

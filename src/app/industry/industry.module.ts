@@ -14,13 +14,15 @@ import { LogisticComponent } from './components/logistic/logistic.component';
 import { HospitalityComponent } from './components/hospitality/hospitality.component';
 import { FacilityManagementComponent } from './components/facility-management/facility-management.component';
 import { FoodAndBeverageComponent } from './components/food-and-beverage/food-and-beverage.component';
+import { PublicModule } from '../public/public.module';
 
 
 @NgModule({
   declarations: [IndustryComponent, MiningComponent, EducationComponent, HealthcareComponent, SuperMarketComponent, RetailComponent, ManufacturingComponent, FashionComponent, LogisticComponent, HospitalityComponent, FacilityManagementComponent, FoodAndBeverageComponent],
   imports: [
     CommonModule,
-    IndustryRoutingModule
+    IndustryRoutingModule,
+    PublicModule
   ]
 })
 export class IndustryModule { }

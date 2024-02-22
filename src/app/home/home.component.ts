@@ -11,11 +11,11 @@ export class HomeComponent implements OnInit {
   fragment: any;
 
   images = [
-    '../../assets/images/hero-1-img.png',
-    '../../assets/images/hero-2-img.png',
-    '../../assets/images/hero-3-img.png',
-    '../../assets/images/hero-2-img.png',
-    '../../assets/images/dottedSquare.png',
+    '../../assets/images/slider-1.png',
+    '../../assets/images/slider-2.png',
+    '../../assets/images/slider-3.png',
+    '../../assets/images/slider-4.png',
+    '../../assets/images/slider-5.png',
   ];
   currentSlide = 1;
   totalSlides = this.images.length;
