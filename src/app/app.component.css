@@ -37,13 +37,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.productContainer {
-  display: flex;
-  align-items: center;
-  width: 170px;
-  cursor: pointer;
-}
-
 .container {
   display: flex;
   padding: 20px;
@@ -142,6 +135,18 @@
   display: block;
 }
 
+.filterBoxProduct {
+  position: absolute;
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  display: none;
+}
+
+.filterBoxProduct.show {
+  display: block;
+}
+
 .flex-item {
   flex-basis: 50px;
 }
@@ -168,7 +173,13 @@
   .navbarList {
     display: flex;
     flex-direction: column !important;
-    /* gap: 1rem; */
   }
+}
+
+.productItem {
+  display: flex;
+  align-items: center;
+  width: 190px;
+  cursor: pointer;
 }
 
