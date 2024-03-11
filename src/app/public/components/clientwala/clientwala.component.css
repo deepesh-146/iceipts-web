@@ -83,17 +83,17 @@ hr {
 }
 
 .img-fluid, .customerName, .customerOccupation {
-  transition: all 0.3s ease-in-out; /* Adding transition for smooth scaling */
+  transition: all 0.3s ease-in-out;
 }
 
 .active {
   opacity: 1;
   margin: 6px;
-  transform: scale(1.09); /* Removed ease-in-out from transform */
+  transform: scale(1.09);
 }
 
 .inactive {
   opacity: 0.3;
-  transform: scale(1); /* Resetting scale for inactive images */
+  transform: scale(1);
 }
 

@@ -9,6 +9,9 @@ import { WGmanagementComponent } from './components/wgmanagement/wgmanagement.co
 import { IndustryComponent } from './components/industry/industry.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ProductErpComponent } from './components/product-erp/product-erp.component';
+import { ProductFleetManagementComponent } from './components/product-fleet-management/product-fleet-management.component';
+import { ProductMobileApplicationComponent } from './components/product-mobile-application/product-mobile-application.component';
 
 const routes:Routes=[
 
@@ -21,6 +24,9 @@ const routes:Routes=[
   { path : 'industry', component : IndustryComponent},
   { path : 'about', component : AboutUsComponent},
   { path : 'contact', component : ContactComponent},
+  { path : 'product-erp', component : ProductErpComponent},
+  { path : 'product-fleet-management', component : ProductFleetManagementComponent},
+  { path : 'product-mobile-management', component : ProductMobileApplicationComponent},
 ]
 
 

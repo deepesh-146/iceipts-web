@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.container-fluid {
+  position: relative;
+}
+
+h4, h1, h3 {
+  font-family: 'Caveat', cursive;
+  color:rgba(26, 32, 44, 1);
+}
+
+h1 {
+  margin-top: 60px;
+}
+
+h5 {
+  color: rgba(121, 121, 121, 1);
+  margin: 100px 0px 60px;
+  text-align: justify;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
+.leftComma {
+  width: 25px;
+  height: 30px;
+  rotate: 180deg;
+  position: absolute;
+  left: 46%;
+  bottom: 51%;
+}
+
+.rightComma {
+  width: 25px;
+  height: 30px;
+  rotate: 180deg;
+  position: absolute;
+  left: 49%;
+  bottom: 51%;
+}
+
+.leftBracket {
+  height:275px;
+  position: absolute;
+  left:-10%;
+  bottom:9%;
+}
+
+.rightBracket {
+  height:275px;
+  position: absolute;
+  right:-10%;
+  bottom:9%;
+  rotate: 180deg;
+}
+
+.right-bg {
+  position: absolute;
+  right: 0;
+  top: 36%;
+  height: 400px;
+  z-index: 1;
+}
+
+.left-bg {
+  position: absolute;
+  left: 0;
+  top: 72%;
+  height: 300px;
+  z-index: 1;
+}
+
+.content {
+  background-color: rgba(244, 240, 236, 1);
+  padding: 20px 60px;
+}
+
+.templates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  /* background-color: rgba(201, 216, 255, 1); */
+  padding: 24px;
+  border: none;
+  border-radius: 20px;
+  width: calc(33.333% - 2rem); /* Adjusts card width to fit 3 per row, accounting for gap */
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  /* background-color: rgba(201, 216, 255, 1); */
+}
+
+.title span {
+  font-weight: bold;
+  text-align: center;
+}
+
+.title img {
+  width: 130px;
+  height: 110px;
+}
+
+.info {
+  text-align: center;
+  text-wrap: wrap;
+  margin-top: 16px;
+  color: rgba(121, 121, 121, 1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 2rem); /* Adjust to show 2 cards per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%; /* Adjust to stack cards vertically on very small screens */
+  }
+}
+
+
+@media (min-width: 0px) and (max-width: 768px) {
+
+  h1 {
+    margin-top: 30px;
+  }
+
+  h5 {
+    width:300px;
+    /* margin-left: 30%; */
+    font-size: 18px;
+  }
+
+  .leftBracket {
+    height:375px;
+    left:10%;
+  }
+
+  .rightBracket {
+    height:375px;
+    right:10%;
+  }
+
+  .rightComma, .leftComma {
+    bottom: 60%;
+  }
+
+}
+
+@media (min-width: 550px) and (max-width: 700px) {
+  h5 {
+    width:300px;
+    /* margin-left: 26%; */
+    font-size: 18px;
+  }
+
+}
+
+@media (min-width: 450px) and (max-width: 550px) {
+  h5 {
+    width:250px;
+    /* margin-left: 25%; */
+    font-size: 15px;
+  }
+
+}
+
+@media (min-width: 0px) and (max-width: 450px) {
+  h5 {
+    width:200px;
+    /* margin-left: 25%; */
+    font-size: 15px;
+  }
+}
+
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
