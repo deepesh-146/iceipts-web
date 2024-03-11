@@ -245,7 +245,7 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark navbar-light nav-sticky bg-white" id="navbar" style="box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);">
   <div class="container-fluid" style = "padding-right: 0px;">
     <a class="navbar-brand logo">
-      <img style="height: 1.4rem;margin-left: 10px;cursor: pointer;" routerLink="/home" fragment="home" class="logo2" src=" assets/images/logos/logo-grad.png">
+      <img style="height: 1.4rem;margin-left: 24px;cursor: pointer;" routerLink="/home" fragment="home" class="logo2" src=" assets/images/logos/logo-grad.png">
     </a>
     <button class=" navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarCollapse03"
       aria-controls="navbarCollapse03" aria-expanded="false" aria-label="Toggle navigation"
@@ -260,7 +260,7 @@
           <a class = "nav-link" style = "color: rgba(74, 85, 104, 1);" [routerLink]="['/home']" routerLinkActive="active">Home</a>
         </li>
         <li class = "nav-item">
-          <a class = "nav-link" style = "color: rgba(74, 85, 104, 1);" [routerLink]="['/moreinfo/about']" routerLinkActive="active">About Us</a>
+          <a class = "nav-link" style = "color: rgba(74, 85, 104, 1);white-space: nowrap;" [routerLink]="['/moreinfo/about']" routerLinkActive="active">About Us</a>
         </li>
         <li class="nav-item" (mouseenter)="toggleFilter(true)" (mouseleave)="toggleFilter(false)">
           <div class="dropdown">
@@ -381,7 +381,7 @@
         </li>
         <li class = "nav-item">
           <span class = "nav-link">
-            <button class = "appbutton" style = "height: 33px;display: flex;align-items: center;">
+            <button class = "appbutton" style = "height: 33px;display: flex;align-items: center;white-space: nowrap;">
               Request for a Demo
             </button>
           </span>

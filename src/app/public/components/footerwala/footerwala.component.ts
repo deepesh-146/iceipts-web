@@ -8,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class FooterwalaComponent implements OnInit {
 
   currentYear = (new Date()).getFullYear();
-  
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  subscribe() {
+    // Subscription logic goes here
+    console.log('Subscribe button clicked');
+  }
+
 
 }

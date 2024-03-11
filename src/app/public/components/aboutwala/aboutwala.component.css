@@ -26,8 +26,24 @@ hr {
   background: linear-gradient(to right, rgba(242, 113, 65, 1), rgba(17, 1, 82, 1));
 }
 
+.erpDataList {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
 
+.erpData {
+  display: flex;
+  padding:10px;
+  border: 1px solid rgba(231, 218, 237, 1);
+}
 
+@media (min-width: 0px) and (max-width: 991px) {
+  .erpData {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 
 

@@ -12,6 +12,8 @@ body {
   text-align: justify;
   font-family: 'Poppins', sans-serif;
   overflow: hidden !important;
+  margin: 0;
+  padding: 0;
 }
 
 .heading {

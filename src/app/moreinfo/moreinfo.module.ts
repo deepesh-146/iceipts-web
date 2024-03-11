@@ -13,6 +13,9 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PublicModule } from "../public/public.module";
+import { ProductErpComponent } from './components/product-erp/product-erp.component';
+import { ProductFleetManagementComponent } from './components/product-fleet-management/product-fleet-management.component';
+import { ProductMobileApplicationComponent } from './components/product-mobile-application/product-mobile-application.component';
 
 
 
@@ -20,7 +23,7 @@ import { PublicModule } from "../public/public.module";
 
 
 @NgModule({
-    declarations: [WGmanagementComponent, MoreinfoComponent, ErpComponent, GstComponent, ScanpayComponent, EmpmanagementComponent, SelfcheckoutComponent, IndustryComponent, AboutUsComponent, ContactComponent],
+    declarations: [WGmanagementComponent, MoreinfoComponent, ErpComponent, GstComponent, ScanpayComponent, EmpmanagementComponent, SelfcheckoutComponent, IndustryComponent, AboutUsComponent, ContactComponent, ProductErpComponent, ProductFleetManagementComponent, ProductMobileApplicationComponent],
     imports: [
         CommonModule,
         MoreinfoRoutingModule,
