@@ -12,6 +12,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ProductErpComponent } from './components/product-erp/product-erp.component';
 import { ProductFleetManagementComponent } from './components/product-fleet-management/product-fleet-management.component';
 import { ProductMobileApplicationComponent } from './components/product-mobile-application/product-mobile-application.component';
+import { ProductsComponent } from './components/products/products.component';
 
 const routes:Routes=[
 
@@ -23,6 +24,7 @@ const routes:Routes=[
   { path : 'empmanagement', component : EmpmanagementComponent},
   { path : 'industry', component : IndustryComponent},
   { path : 'about', component : AboutUsComponent},
+  { path : 'products', component : ProductsComponent},
   { path : 'contact', component : ContactComponent},
   { path : 'product-erp', component : ProductErpComponent},
   { path : 'product-fleet-management', component : ProductFleetManagementComponent},

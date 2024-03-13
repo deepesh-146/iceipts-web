@@ -40,18 +40,19 @@ export class ContactComponent implements OnInit {
         email: this.contactForm.value.email,
         subject: this.contactForm.value.subject,
         message: this.contactForm.value.message,
+        phone: this.contactForm.value.phone,
         status: 'PENDING'
       };
 
       this.http.post(url, formData, { headers }).subscribe(
         response => {
           console.log('Response:', response);
-          // Handle success response
+          alert('Contact form saved successfully.')
           this.contactForm.reset();
         },
         error => {
           console.error('Error:', error);
-          // Handle error
+          alert('Something went wrong.')
         }
       );
     } else {

@@ -12,6 +12,8 @@ import { RouterModule } from '@angular/router';
 import { PublicRoutingModule } from './public-routing.module';
 import { OwnerinfoComponent } from './components/ownerinfo/ownerinfo.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     PublicComponent,
     OwnerinfoComponent,
   ],
-  imports: [CommonModule, RouterModule, PublicRoutingModule, NgbModule],
+  imports: [
+    CommonModule,
+    RouterModule,
+    PublicRoutingModule,
+    NgbModule,
+    HttpClientModule,
+    FormsModule
+  ],
   exports: [
     AboutwalaComponent,
     ClientwalaComponent,
