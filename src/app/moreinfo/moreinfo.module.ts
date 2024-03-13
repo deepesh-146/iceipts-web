@@ -16,6 +16,7 @@ import { PublicModule } from "../public/public.module";
 import { ProductErpComponent } from './components/product-erp/product-erp.component';
 import { ProductFleetManagementComponent } from './components/product-fleet-management/product-fleet-management.component';
 import { ProductMobileApplicationComponent } from './components/product-mobile-application/product-mobile-application.component';
+import { ProductsComponent } from './components/products/products.component';
 
 
 
@@ -23,7 +24,7 @@ import { ProductMobileApplicationComponent } from './components/product-mobile-a
 
 
 @NgModule({
-    declarations: [WGmanagementComponent, MoreinfoComponent, ErpComponent, GstComponent, ScanpayComponent, EmpmanagementComponent, SelfcheckoutComponent, IndustryComponent, AboutUsComponent, ContactComponent, ProductErpComponent, ProductFleetManagementComponent, ProductMobileApplicationComponent],
+    declarations: [WGmanagementComponent, MoreinfoComponent, ErpComponent, GstComponent, ScanpayComponent, EmpmanagementComponent, SelfcheckoutComponent, IndustryComponent, AboutUsComponent, ContactComponent, ProductErpComponent, ProductFleetManagementComponent, ProductMobileApplicationComponent, ProductsComponent],
     imports: [
         CommonModule,
         MoreinfoRoutingModule,
