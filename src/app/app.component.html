@@ -353,13 +353,13 @@
         <li class = "nav-item">
           <a class = "nav-link" style = "color: rgba(74, 85, 104, 1);" [routerLink]="['/moreinfo/industry']" routerLinkActive="active">Industry</a>
         </li>
-        <li class = "nav-item">
+        <!-- <li class = "nav-item">
           <a class = "nav-link" style = "color: rgba(74, 85, 104, 1);" [routerLink]="['/home']" routerLinkActive="active">Pricing</a>
-        </li>
+        </li> -->
         <li class = "nav-item">
-          <a class = "nav-link" style = "color: rgba(74, 85, 104, 1);"[routerLink]="['/moreinfo/contact']" routerLinkActive="active">Contact</a>
+          <a class = "nav-link" style = "color: rgba(74, 85, 104, 1);" [routerLink]="['/moreinfo/contact']" routerLinkActive="active">Contact</a>
         </li>
-        <li class = "nav-item" (mouseenter)="toggleFilter2(true)" (mouseleave)="toggleFilter2(false)">
+        <!-- <li class = "nav-item" (mouseenter)="toggleFilter2(true)" (mouseleave)="toggleFilter2(false)">
           <div class="dropdown">
             <span class = "nav-link" style = "cursor: pointer;">
               <img src = "../assets/images/world.png" width = "25" height = "25">
@@ -381,10 +381,10 @@
               </div>
             </div>
           </div>
-        </li>
+        </li> -->
         <li class = "nav-item">
           <span class = "nav-link">
-            <button class = "appbutton" style = "height: 33px;display: flex;align-items: center;white-space: nowrap;">
+            <button class = "appbutton" style = "height: 33px;display: flex;align-items: center;white-space: nowrap;" onclick=" window.open('https://web.iceipts.com/#/auth/login','_blank')" target="_blank">
               Request for a Demo
             </button>
           </span>
