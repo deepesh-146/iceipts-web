@@ -84,7 +84,7 @@
 
 button {
   padding: 10px 20px;
-  background: linear-gradient(to left, rgba(102, 117, 247, 1), rgba(87, 0, 123, 1));
+  /* background: linear-gradient(to left, rgba(102, 117, 247, 1), rgba(87, 0, 123, 1)); */
   border: none;
   color: #fff;
   font-size: 16px;
