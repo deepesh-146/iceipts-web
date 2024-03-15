@@ -16,7 +16,7 @@
   text-align:center;
 }
 
-.comment {
+/* .comment {
   color: rgba(25, 24, 37, 0.5);
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -24,6 +24,134 @@
   margin: 60px 0px;
   text-align: justify;
   width: 350px
+} */
+
+.comment {
+  position: relative;
+  padding: 20px 40px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: justify;
+  width: 40%;
+  margin: 20px auto;
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
+  box-sizing: border-box;
+}
+
+.comment:before, .comment:after {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, chocolate, darkred);
+  font-size: 6em;
+  position: absolute;
+}
+
+.comment:before {
+  content: "‘";
+  top: 65%;
+  left: 0;
+  transform: translate(-10%, -100%);
+}
+
+.comment:after {
+  content: '’';
+  bottom: 40%;
+  right: 0;
+  transform: translate(10%, 100%);
+}
+
+@media (min-width: 991px)  and (max-width: 1100px) {
+
+  .comment:before {
+    top: 60%;
+  }
+
+  .comment:after {
+    bottom: 35%;
+  }
+
+}
+@media (min-width: 768px)  and (max-width: 991px) {
+
+  .comment {
+    width: 60%;
+  }
+
+  .comment:before {
+    top: 70%;
+  }
+
+  .comment:after {
+    bottom: 50%;
+  }
+
+}
+@media (min-width: 625px)  and (max-width: 768px) {
+
+  .comment {
+    width:70%;
+  }
+
+  .comment:before {
+    top: 70%;
+  }
+
+  .comment:after {
+    bottom: 50%;
+  }
+
+}
+@media (min-width: 500px)  and (max-width: 625px) {
+
+  .comment {
+    width:70%;
+  }
+
+  .comment:before {
+    top: 50%;
+  }
+
+  .comment:after {
+    bottom: 30%;
+  }
+
+}
+@media (min-width: 450px)  and (max-width: 500px) {
+
+  .comment {
+    width:80%;
+  }
+
+  .comment:before {
+    top: 50%;
+    left: 0;
+  }
+
+  .comment:after {
+    bottom: 30%;
+    right: 0;
+  }
+
+}
+@media (min-width: 0px)  and (max-width: 450px) {
+
+  .comment {
+    width:80%;
+  }
+
+  .comment:before {
+    top: 40%;
+    left: 0;
+  }
+
+  .comment:after {
+    bottom: 20%;
+    right: 0;
+  }
+
 }
 
 .leftComma {
@@ -47,7 +175,7 @@
   width: 25px;
   height: 30px;
   position: absolute;
-  left:10%;
+  left:5%;
   margin-top: 15%;
   cursor: pointer;
 }
@@ -56,7 +184,7 @@
   width: 25px;
   height: 30px;
   position: absolute;
-  right:10%;
+  right:5%;
   rotate: 180deg;
   margin-top: 15%;
   cursor: pointer;
