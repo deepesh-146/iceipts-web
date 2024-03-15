@@ -9,3 +9,9 @@ h4, h1, h3 {
 p {
   font-family: 'Poppins', sans-serif;
 }
+
+.readMore {
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
