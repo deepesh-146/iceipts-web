@@ -22,12 +22,11 @@
   background-color: blue;
   border-radius: 20px 0px 0px 20px;
   width: 260px;
+  height: 500px;
   /* margin-right: 50px; */
-  height: 591px;
   position: absolute;
   right: 0;
   z-index: 0;
-  min-height: 500px;
   margin:0;
 }
 
@@ -38,9 +37,97 @@ hr {
   background: linear-gradient(to right, rgba(242, 113, 65, 1), rgba(17, 1, 82, 1));
 }
 
-@media screen and (max-width: 992px) {
+/* .video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  overflow: hidden;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+.video-container {
+  position: relative;
+  width: 450px;
+  height: 320px;
+  padding-bottom: 56.25%;
+  margin: 10px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.frame {
+  border-radius: 10px;
+  width: 450px !important;
+  height:320px !important;
+}
+
+@media (min-width: 1443px) and (max-width: 1571px) {
+  .blueBackground {
+    height: 525px;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1443px) {
+  .blueBackground {
+    height: 560px;
+  }
+}
+@media (min-width: 1283px) and (max-width: 1300px) {
+  .blueBackground {
+    height: 580px;
+  }
+}
+@media (min-width: 1192px) and (max-width: 1283px) {
+  .blueBackground {
+    height: 590px;
+  }
+}
+@media (min-width: 1121px) and (max-width: 1191px) {
+  .blueBackground {
+    height: 620px;
+  }
+}
+@media (min-width: 1118px) and (max-width: 1121px) {
+  .blueBackground {
+    height: 685px;
+  }
+}
+@media (min-width: 991px) and (max-width: 1118px) {
+  .blueBackground {
+    height: 720px;
+  }
+}
+@media (min-width: 991px) and (max-width: 1058px) {
+  .blueBackground {
+    height: 750px;
+  }
+}
+@media screen and (max-width: 991px) {
   .blueBackground {
     display: none;
+  }
+}
+@media (min-width: 0) and (max-width: 500px) {
+  .video-container {
+    width: 320px;
+    height: 270px;
+  }
+  .frame {
+    width: 320px !important;
+    height:270px !important;
   }
 }
 
