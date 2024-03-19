@@ -62,7 +62,7 @@
               </div>
               <div class="col-lg-6 col-md-12">
                 <div class="inputbox">
-                  <input type="text" formControlName="phone" maxlength="10" required>
+                  <input type="text" formControlName="phone" maxlength="10" (keypress)="numberOnly($event)" required>
                   <span>Phone</span>
                 </div>
                 <div *ngIf="contactForm.get('phone').invalid && (contactForm.get('phone').dirty || contactForm.get('phone').touched)">

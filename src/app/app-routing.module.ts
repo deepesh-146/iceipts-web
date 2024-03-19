@@ -34,7 +34,11 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes,{ useHash: true })
+    RouterModule.forRoot(routes, {
+      useHash: true, // Use hash-based routing
+      scrollPositionRestoration: 'top', // Scrolls to top on route change
+      anchorScrolling: 'enabled' // Enables scroll anchoring
+    })
   ],
   exports: [RouterModule]
 })
