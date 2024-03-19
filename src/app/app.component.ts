@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ScrollService } from './scroll.service';
 
 
 @Component({
@@ -10,7 +11,7 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'iCeipts Technology';
 
-  constructor(private router: Router){}
+  constructor(private router: Router, private scrollService: ScrollService){}
   public isCollapsed = true;
   isLoading: boolean;
   scroller:any;

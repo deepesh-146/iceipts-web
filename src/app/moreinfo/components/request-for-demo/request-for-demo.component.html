@@ -1,0 +1,117 @@
+<section class = "demo">
+  <div class="container-fluid" style="margin:auto;">
+    <div style = "display: flex;flex-direction: column;justify-content:center;align-items: center;">
+      <h2 class="heading">Request For a Demo</h2>
+      <h3>Kindly respond to a few concise inquiries to enable us to customize the experience according to your preferences.</h3>
+    </div>
+    <form [formGroup]="DemoForm" (ngSubmit)="onSubmit()">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-2">
+            <div class="input-container">
+              <label for="firstName">First Name</label>
+              <input type="text" name="firstName" id="firstName" placeholder="Enter your first name" autocomplete="off"
+                formControlName="firstName" maxlength="50" required>
+              <div *ngIf="DemoForm.get('firstName').invalid && (DemoForm.get('firstName').dirty || DemoForm.get('firstName').touched)"
+                class="text-danger">
+                <div *ngIf="DemoForm.get('firstName').errors.required">
+                  First name is required.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 mb-2">
+            <div class="input-container">
+              <label for="lastName">Last Name</label>
+              <input type="text" name="lastName" id="lastName" placeholder="Enter your last name" autocomplete="off"
+                formControlName="lastName" maxlength="50" required>
+              <div *ngIf="DemoForm.get('lastName').invalid && (DemoForm.get('lastName').dirty || DemoForm.get('lastName').touched)"
+                class="text-danger">
+                <div *ngIf="DemoForm.get('lastName').errors.required">
+                  Last name is required.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-2">
+            <div class="input-container">
+              <label for="phone">Phone Number</label>
+              <input type="text" name="phone" id="phone" placeholder="Enter your phone number" autocomplete="off"
+                formControlName="phone" maxlength="10" minlength="10" (keypress)="numberOnly($event)" required>
+              <div *ngIf="DemoForm.get('phone').invalid && (DemoForm.get('phone').dirty || DemoForm.get('phone').touched)"
+                class="text-danger">
+                <div *ngIf="DemoForm.get('phone').errors.required">
+                  Phone number is required.
+                </div>
+                <div *ngIf="DemoForm.get('phone').errors.pattern">
+                  Please enter a valid phone number.
+                </div>
+                <div *ngIf="DemoForm.get('phone').errors.minlength || DemoForm.get('phone').errors.maxlength">
+                  Phone number must be 10 digits.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 mb-2">
+            <div class="input-container">
+              <label for="email">Business Email</label>
+              <input type="email" name="email" id="email" placeholder="Enter your business email" autocomplete="off"
+                formControlName="email" maxlength="50" required>
+              <div *ngIf="DemoForm.get('email').invalid && (DemoForm.get('email').dirty || DemoForm.get('email').touched)"
+                class="text-danger">
+                <div *ngIf="DemoForm.get('email').errors.required">
+                  Email is required.
+                </div>
+                <div *ngIf="DemoForm.get('email').errors.email">
+                  Please enter a valid email address.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mb-2">
+            <div class="input-container">
+              <label for="companyName">Company Name</label>
+              <input type="text" name="companyName" id="companyName" placeholder="Enter your company name" autocomplete="off"
+                formControlName="companyName" maxlength="50" required>
+              <div *ngIf="DemoForm.get('companyName').invalid && (DemoForm.get('companyName').dirty || DemoForm.get('companyName').touched)"
+                class="text-danger">
+                <div *ngIf="DemoForm.get('companyName').errors.required">
+                  Company name is required.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 mb-2">
+            <div class="input-container">
+              <label for="referral">Where did you hear about us?</label>
+              <select formControlName="referral" style = "padding: 0.625rem;" required>
+                <option value="" disabled selected>Choose an option</option>
+                <option>Facebook</option>
+                <option>Twitter</option>
+                <option>Instagram</option>
+                <option>YouTube</option>
+                <option>Other</option>
+              </select>
+              <div *ngIf="DemoForm.get('referral').invalid && (DemoForm.get('referral').dirty || DemoForm.get('referral').touched)"
+                class="text-danger">
+                <div *ngIf="DemoForm.get('referral').errors.required">
+                  Please select where you heard about us.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <button type="submit" class="btn btn-warning" style = "float: right;">Submit</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+<app-footerwala></app-footerwala>
