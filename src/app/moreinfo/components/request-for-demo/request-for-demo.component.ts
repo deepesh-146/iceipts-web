@@ -35,7 +35,12 @@ export class RequestForDemoComponent implements OnInit {
     }
     const formData = this.DemoForm.value;
     console.log(formData);
-    this.http.post<any>('your-api-endpoint-url', formData)
+    // Set the type to "demo"
+    formData['type'] = 'DEMO';
+    // const url = 'https://web.iceipts.com/api/apiserver/enquiries/contactUs';
+    const url = 'https://uaestaging.iceipts.com/api/apiserver/enquiries/contactUs';
+
+    this.http.post<any>(url, formData)
       .subscribe(
         response => {
           console.log('Form submission successful!', response);
