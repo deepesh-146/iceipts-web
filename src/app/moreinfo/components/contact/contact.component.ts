@@ -30,7 +30,8 @@ export class ContactComponent implements OnInit {
 
   submitForm() {
     if (this.contactForm.valid) {
-      const url = 'https://web.iceipts.com/api/apiserver/enquiries/contactUs';
+      // const url = 'https://web.iceipts.com/api/apiserver/enquiries/contactUs';
+      const url = 'https://uaestaging.iceipts.com/api/apiserver/enquiries/contactUs';
       const headers = new HttpHeaders()
         .set('Content-Type', 'application/json')
         .set('Authorization', 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJEZWVwZXNoIGt1c2h3YWhhIiwiaWQiOiIxOTZkMGQ2My03OWI4LTRjOGEtYWE0MS00YjBkN2YzYmFkZjkiLCJpYXQiOjE3MDU2MzU4NTUsImV4cCI6MTczNzE3MTg1NSwiYXVkIjoiRGVlcGVzaCBrdXNod2FoYSJ9.9cwv6w_MCdkFyHxEs8ceWOBuPQMgrc6FX39IxvD1Ajo');
