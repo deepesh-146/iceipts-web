@@ -22,15 +22,17 @@ export class RequestForDemoComponent implements OnInit {
       firstName: ['', [Validators.required, this.trimValidator]],
       lastName: ['', [Validators.required, this.trimValidator]],
       phone: ['', [Validators.required, Validators.pattern("^[0-9]*$"), Validators.minLength(10), Validators.maxLength(10), this.trimValidator]],
-      email: ['', [Validators.required, Validators.email, this.trimValidator]],
+      email: ['', [Validators.required, Validators.email,Validators.pattern("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"), this.trimValidator]],
       companyName: ['', [Validators.required, this.trimValidator]],
-      referral: ['', [Validators.required]]
+      referral: ['', [Validators.required]],
+      country: ['', [Validators.required]]
     });
   }
 
   onSubmit(): void {
     this.submitted = true;
     if (this.DemoForm.invalid) {
+      this.markFormGroupTouched(this.DemoForm);
       return;
     }
     const formData = this.DemoForm.value;
@@ -44,6 +46,7 @@ export class RequestForDemoComponent implements OnInit {
           alert('Demo form saved successfully.');
           this.DemoForm.reset();
           this.DemoForm.get('referral').setValue('');
+          this.DemoForm.get('country').setValue('');
           this.submitted = false;
         },
         error => {
@@ -67,5 +70,14 @@ export class RequestForDemoComponent implements OnInit {
       return false;
     }
     return true;
+  }
+
+  markFormGroupTouched(formGroup: FormGroup) {
+    Object.values(formGroup.controls).forEach(control => {
+      control.markAsTouched();
+      if (control instanceof FormGroup) {
+        this.markFormGroupTouched(control);
+      }
+    });
   }
 }

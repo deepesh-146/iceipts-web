@@ -106,6 +106,24 @@
           </div>
         </div>
         <div class="row">
+          <div class="col-lg-12 col-md-12 mb-2">
+            <div class="input-container">
+              <label for="country">Select Country Name</label>
+              <select formControlName="country" style = "padding: 0.625rem;" required>
+                <option value="" disabled selected>Choose an option</option>
+                <option>India</option>
+                <option>UAE</option>
+              </select>
+              <div *ngIf="DemoForm.get('country').invalid && (DemoForm.get('country').dirty || DemoForm.get('country').touched)"
+                class="text-danger">
+                <div *ngIf="DemoForm.get('country').errors.required">
+                  Please select the country name.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
           <div class="col-lg-12">
             <button type="submit" class="btn btn-warning" style = "float: right;">Submit</button>
           </div>
