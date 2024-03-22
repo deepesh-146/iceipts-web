@@ -9,6 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 export class HomeComponent implements OnInit {
   id: string;
   fragment: any;
+  showPopup = false;
 
   images = [
     '../../assets/images/slider-1.png',
@@ -39,6 +40,16 @@ export class HomeComponent implements OnInit {
   onSlide(slideEvent: any) {
     this.currentSlide = slideEvent;
     this.updateProgressBar();
+  }
+
+  openPopup() {
+    this.showPopup = true;
+    document.body.style.overflow = 'hidden'; // Prevent scrolling
+  }
+
+  closePopup() {
+    this.showPopup = false;
+    document.body.style.overflow = ''; // Allow scrolling
   }
 
   updateProgressBar() {
