@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
 
 .container-fluid {
   position: relative;
@@ -42,11 +44,10 @@ h1 {
 .card {
   display: flex;
   flex-direction: column;
-  /* background-color: rgba(201, 216, 255, 1); */
   padding: 24px;
   border: none;
   border-radius: 20px;
-  width: calc(33.333% - 2rem); /* Adjusts card width to fit 3 per row, accounting for gap */
+  width: calc(33.333% - 2rem);
 }
 
 .title {
@@ -54,7 +55,6 @@ h1 {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  /* background-color: rgba(201, 216, 255, 1); */
 }
 
 .title span {
@@ -74,15 +74,14 @@ h1 {
   color: rgba(121, 121, 121, 1);
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .card {
-    width: calc(50% - 2rem); /* Adjust to show 2 cards per row on smaller screens */
+    width: calc(50% - 2rem);
   }
 }
 
 @media (max-width: 480px) {
   .card {
-    width: 100%; /* Adjust to stack cards vertically on very small screens */
+    width: 100%;
   }
 }

@@ -51,7 +51,6 @@ export class ClientwalaComponent implements OnInit {
 
   onSlide(slideEvent: any) {
     this.currentSlide = slideEvent;
-    console.log('Slide event', slideEvent);
     this.updateCurrentCustomer();
   }
 
