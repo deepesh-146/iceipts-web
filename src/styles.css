@@ -10,7 +10,7 @@
 
 body {
   text-align: justify;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
   overflow: hidden !important;
   margin: 0;
   padding: 0;

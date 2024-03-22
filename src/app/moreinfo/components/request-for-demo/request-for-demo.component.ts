@@ -34,8 +34,6 @@ export class RequestForDemoComponent implements OnInit {
       return;
     }
     const formData = this.DemoForm.value;
-    console.log(formData);
-    // Set the type to "demo"
     formData['type'] = 'DEMO';
     // const url = 'https://web.iceipts.com/api/apiserver/enquiries/contactUs';
     const url = 'https://uaestaging.iceipts.com/api/apiserver/enquiries/contactUs';
@@ -46,6 +44,7 @@ export class RequestForDemoComponent implements OnInit {
           console.log('Form submission successful!', response);
           alert('Demo form saved successfully.');
           this.DemoForm.reset();
+          this.DemoForm.get('referral').setValue('');
           this.submitted = false;
         },
         error => {

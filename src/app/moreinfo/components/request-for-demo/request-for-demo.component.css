@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('../../../../assets/images/req-demo.png');
+  background-image: url('../../../../assets/images/background-demo.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -32,7 +32,6 @@
   border: 1px solid white;
   border-radius: 10px;
   background-color: white;
-  /* box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3); */
   box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.2), 4px 0px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -82,16 +81,25 @@ select:focus {
 
 input::placeholder {
   color: rgb(173, 169, 169);
+  font-size: 16px;
+}
+
+label {
+  font-size: 18px;
+}
+
+option {
+  font-size: 16px;
 }
 
 .text-danger {
   color: #dc3545;
 }
 
-@media (min-width: 991px) and (max-width: 1120px) {
+@media (min-width: 991px) and (max-width: 1200px) {
 
   .container {
-    width: 60%;
+    width: 65%;
     transition: all 1s ease-in-out;
   }
 
@@ -99,7 +107,7 @@ input::placeholder {
 @media (min-width: 768px) and (max-width: 991px) {
 
   .container {
-    width: 60%;
+    width: 70%;
     transition: all 1s ease-in-out;
   }
 
