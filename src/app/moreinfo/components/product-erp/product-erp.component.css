@@ -91,11 +91,10 @@ p {
 .card {
   display: flex;
   flex-direction: column;
-  /* background-color: rgba(201, 216, 255, 1); */
   padding: 24px;
   border: none;
   border-radius: 20px;
-  width: calc(33.333% - 2rem); /* Adjusts card width to fit 3 per row, accounting for gap */
+  width: calc(33.333% - 2rem);
 }
 
 .title {
@@ -103,7 +102,6 @@ p {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  /* background-color: rgba(201, 216, 255, 1); */
 }
 
 .title span {
@@ -123,16 +121,15 @@ p {
   color: rgba(121, 121, 121, 1);
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .card {
-    width: calc(50% - 2rem); /* Adjust to show 2 cards per row on smaller screens */
+    width: calc(50% - 2rem);
   }
 }
 
 @media (max-width: 480px) {
   .card {
-    width: 100%; /* Adjust to stack cards vertically on very small screens */
+    width: 100%;
   }
 }
 
@@ -145,7 +142,6 @@ p {
 
   h5 {
     width:300px;
-    /* margin-left: 30%; */
     font-size: 18px;
   }
 
@@ -168,7 +164,6 @@ p {
 @media (min-width: 550px) and (max-width: 700px) {
   h5 {
     width:300px;
-    /* margin-left: 26%; */
     font-size: 18px;
   }
 
@@ -177,7 +172,6 @@ p {
 @media (min-width: 450px) and (max-width: 550px) {
   h5 {
     width:250px;
-    /* margin-left: 25%; */
     font-size: 15px;
   }
 
@@ -186,7 +180,6 @@ p {
 @media (min-width: 0px) and (max-width: 450px) {
   h5 {
     width:200px;
-    /* margin-left: 25%; */
     font-size: 15px;
   }
 }

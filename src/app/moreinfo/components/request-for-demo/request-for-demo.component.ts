@@ -41,14 +41,12 @@ export class RequestForDemoComponent implements OnInit {
     this.http.post<any>(url, formData)
       .subscribe(
         response => {
-          console.log('Form submission successful!', response);
           alert('Demo form saved successfully.');
           this.DemoForm.reset();
           this.DemoForm.get('referral').setValue('');
           this.submitted = false;
         },
         error => {
-          console.error('Error submitting form:', error);
           alert('Something went wrong.');
         }
       );

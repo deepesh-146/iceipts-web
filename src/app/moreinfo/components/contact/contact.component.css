@@ -63,7 +63,6 @@
 .ContactForm .inputbox input:valid ~ span,
 .ContactForm .inputbox textarea:valid ~ span {
   color: black;
-  /* color: green; */
 }
 
 .ContactForm .inputbox input[type="email"]:focus ~ span,
@@ -88,7 +87,6 @@
 
 button {
   padding: 10px 20px;
-  /* background: linear-gradient(to left, rgba(102, 117, 247, 1), rgba(87, 0, 123, 1)); */
   border: none;
   color: #fff;
   font-size: 16px;
@@ -102,7 +100,6 @@ button {
 
 .map {
   width: 100%;
-  /* max-width: 800px; */
   flex-basis: 1150px;
   padding: 0px 30px;
   margin: 20px;
@@ -113,151 +110,3 @@ iframe {
   height: 400px;
   border: 0;
 }
-
-
-
-/*
-*
-{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-
-}
-h4, h1, h3 {
-  font-family: 'Caveat', cursive;
-  color:rgba(26, 32, 44, 1);
-}
-
-p {
-  font-family: 'Poppins', sans-serif;
-}
-
-.section{
-    position: relative;
-    min-height: 100vh;
-    padding: 50px;
-    display: flex;
-    align-items:center;
-    flex-direction: column;
-}
-
-.container1{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.container1 .contactinfo{
-    width: 23%;
-    display: flex;
-    flex-direction: column;
-    background-color: whitesmoke;
-    border-radius: 50px;
-    margin: 30px;
-}
-
-.container1 .contactinfo .box{
-    position: relative;
-    padding: 15px 0;
-    display: flex;
-}
-
-.container1 .contactinfo .box .icon{
-    min-width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 22px;
-}
-
-.ContactForm{
-    width: 50%;
-    padding: 40px;
-    background: #fff;
-}
-
-.ContactForm .inputbox{
-    position: relative;
-    width: 100%;
-    margin-top: 10px;
-}
-
-.ContactForm .inputbox input,
-.ContactForm .inputbox textarea
-{
-    width: 100%;
-    padding: 5px 0;
-    font-size: 16px;
-    margin: 10px 0;
-    border: none;
-    border-bottom: 2px solid #333;
-    outline: none;
-    resize: none;
-}
-
-.ContactForm .inputbox span{
-    position: absolute;
-    left: 0;
-    padding: 5px 0;
-    font-size: 16px;
-    margin: 10px 0;
-    pointer-events: none;
-    transition: 0.5s;
-    color: #666;
-}
-
-.ContactForm .inputbox input:focus ~ span,
-.ContactForm .inputbox input:valid ~ span,
-.ContactForm .inputbox textarea:focus ~ span,
-.ContactForm .inputbox textarea:valid ~ span
-{
-    color: #e91e63;
-    font-size: 12px;
-    transform: translateY(-20px);
-}
-
-.ContactForm .inputbox input[type="submit"]
-{
-    width: 100px;
-    background: #00bcd4;
-    color:#fff;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 18px;
-}
-
- iframe{
-    width: 900px;
-    height: 400px;
-}
-
-button {
-  padding: 10px 20px;
-  background: linear-gradient(to right, rgba(102, 117, 247, 1), rgba(87, 0, 123, 1));
-  border: none;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-@media(max-width:991px)
-
-{
-    .section{
-        padding: 50px;
-    }
-    .container1{
-        flex-direction: column;
-    }
-    .container1 .contactinfo,
-    .ContactForm
-    {
-        margin-bottom: 40px;
-    }
-
-} */

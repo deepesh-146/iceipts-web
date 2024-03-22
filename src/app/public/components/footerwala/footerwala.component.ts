@@ -33,45 +33,20 @@ export class FooterwalaComponent implements OnInit {
         if (error.status === 409) {
           alert('This email is already subscribed.');
           this.email = '';
-          console.error('This email is already subscribed.', error);
         } else {
           alert('Subscription failed. Please try again later.');
           this.email = '';
-          console.error('Subscription failed', error);
           return throwError(error); // Re-throw the error so you can catch it later if needed
         }
       })
     ).subscribe({
       next: (res) => {
-        console.log('Subscription successful', res);
         alert('Subscription successful! Thank you for subscribing.');
         this.email = '';
         this.submitted = false;
       }
     });
   }
-  // subscribe() {
-  //   this.submitted = true;
-
-  //   if (!this.email || !this.validateEmail(this.email)) {
-  //     console.error('Please enter a valid email address.');
-  //     this.submitted = false;
-  //     return;
-  //   }
-
-  //   this.http.post(this.apiServerUrl, { email: this.email }).subscribe({
-  //     next: (res) => {
-  //       console.log('Subscription successful', res);
-  //       alert('Subscription successful! Thank you for subscribing.');
-  //       this.email = '';
-  //       this.submitted = false;
-  //     },
-  //     error: (error) => {
-  //       alert('Subscription failed. Please try again later.');
-  //       console.error('Subscription failed', error);
-  //     }
-  //   });
-  // }
 
    // Utility function for email validation
    validateEmail(email: string): boolean {
