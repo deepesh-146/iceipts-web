@@ -50,7 +50,6 @@ export class HomeComponent implements OnInit {
   }
 
   scroll(id) {
-    console.log('scroll to--', id);
     const elmnt = document.getElementById(id);
     elmnt.scrollIntoView({
       behavior: 'smooth',

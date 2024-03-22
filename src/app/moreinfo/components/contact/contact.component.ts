@@ -47,12 +47,10 @@ export class ContactComponent implements OnInit {
 
       this.http.post(url, formData, { headers }).subscribe(
         response => {
-          console.log('Response:', response);
           alert('Contact form saved successfully.')
           this.contactForm.reset();
         },
         error => {
-          console.error('Error:', error);
           alert('Something went wrong.')
         }
       );

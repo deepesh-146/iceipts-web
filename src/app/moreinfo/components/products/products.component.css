@@ -4,6 +4,8 @@
 
 .container-fluid {
   position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
 }
 
 .right-bg {
@@ -25,7 +27,8 @@
 h1 {
   display: flex;
   justify-content: center;
-  font-family: 'Caveat', cursive;
+  font-family: 'Caveat Brush', cursive;
+  font-size: 52px;
   color:rgba(26, 32, 44, 1);
 }
 
