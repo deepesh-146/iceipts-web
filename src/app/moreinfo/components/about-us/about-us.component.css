@@ -48,16 +48,6 @@
   padding-left: 30px;
 }
 
-.content {
-  color: rgba(25, 24, 37, 0.5);
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  margin-bottom: 30px;
-  /* text-align: justify; */
-  padding: 0px 30px;
-}
-
 hr {
   width: 69px;
   height: 5px;
@@ -79,6 +69,17 @@ hr {
   height: 550px;
   max-height: 400px;
   min-height: 350px;
+}
+
+.dottedPic {
+  padding:20px;
+  max-width: 100%;
+  width:250px;
+  height: 250px;
+  max-height: 400px;
+  min-height: 250px;
+  margin: 0 0 300px 300px !important;
+  transform: translate(70px, -30px);
 }
 
 .visionCard {
@@ -112,6 +113,9 @@ hr {
   .features-img {
     left: 45%;
   }
+  .dottedPic {
+    transform: translate(500px, -30px);
+  }
 }
 @media (min-width:2000px) and (max-width:2100px) {
   .visionCard {
@@ -119,6 +123,9 @@ hr {
   }
   .features-img {
     left: 42%;
+  }
+  .dottedPic {
+    transform: translate(400px, -30px);
   }
 }
 @media (min-width:1900px) and (max-width:2000px) {
@@ -128,6 +135,9 @@ hr {
   .features-img {
     left: 40%;
   }
+  .dottedPic {
+    transform: translate(350px, -30px);
+  }
 }
 @media (min-width:1800px) and (max-width:1900px) {
   .visionCard {
@@ -135,6 +145,9 @@ hr {
   }
   .features-img {
     left: 40%;
+  }
+  .dottedPic {
+    transform: translate(300px, -30px);
   }
 }
 @media (min-width:1600px) and (max-width:1800px) {
@@ -144,6 +157,9 @@ hr {
   .features-img {
     left: 40%;
   }
+  .dottedPic {
+    transform: translate(250px, -30px);
+  }
 }
 @media (min-width:1400px) and (max-width:1600px) {
   .visionCard {
@@ -151,6 +167,9 @@ hr {
   }
   .features-img {
     left: 40%;
+  }
+  .dottedPic {
+    transform: translate(150px, -30px);
   }
 }
 @media (min-width:1300px) and (max-width:1400px) {
@@ -160,6 +179,9 @@ hr {
   .features-img {
     left: 40%;
   }
+  .dottedPic {
+    transform: translate(60px, -30px);
+  }
 }
 @media (min-width:1200px) and (max-width:1300px) {
   .visionCard {
@@ -167,6 +189,9 @@ hr {
   }
   .features-img {
     left: 40%;
+  }
+  .dottedPic {
+    transform: translate(50px, -30px);
   }
 }
 @media (min-width:1100px) and (max-width:1200px) {
@@ -176,6 +201,9 @@ hr {
   .features-img {
     left: 45%;
   }
+  .dottedPic {
+    transform: translate(50px, -30px);
+  }
 }
 @media (min-width:991px) and (max-width:1100px) {
   .visionCard {
@@ -183,6 +211,9 @@ hr {
   }
   .features-img {
     left: 45%;
+  }
+  .dottedPic {
+    transform: translate(10px, -30px);
   }
 }
 @media (min-width:900px) and (max-width:991px) {
@@ -291,6 +322,11 @@ hr {
     top: 17%;
   }
 }
+@media (min-width:0px) and (max-width:991px) {
+  .dottedPic {
+    display: none;
+  }
+}
 
 .visionCard span {
   color: rgba(242, 113, 65, 1);
@@ -342,5 +378,38 @@ hr {
 @media (max-width: 600px) {
   .card {
     width: 100%;
+  }
+}
+
+.content {
+  color: rgba(25, 24, 37, 0.5);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 30px;
+  text-align:left;
+  padding: 0px 30px;
+}
+
+.erpDataList {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.erpData {
+  display: flex;
+  padding:10px;
+  border: 1px solid rgba(231, 218, 237, 1);
+  border-radius: 10px;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.1);
+  background-color: #F9F9F9;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 0px) and (max-width: 991px) {
+  .erpData {
+    display: flex;
+    flex-direction: column;
   }
 }
